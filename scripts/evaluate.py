@@ -2,6 +2,7 @@
 import csv
 import hashlib
 import json
+import math
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -12,7 +13,14 @@ from contractchecker.metrics import binary_metrics, bootstrap, wilson
 ROOT=Path(__file__).resolve().parents[1]
 
 def write(path,obj):
-    path.write_text(json.dumps(obj,indent=2,ensure_ascii=False,sort_keys=True)+'\n',encoding='utf-8',newline='\n')
+    # Python 3.12 changed float summation. Serialize research metrics at a fixed
+    # precision far below the sample's resolution, instead of platform noise.
+    def canonical(value):
+        if isinstance(value,float):return round(value,12)
+        if isinstance(value,dict):return {k:canonical(v) for k,v in value.items()}
+        if isinstance(value,list):return [canonical(v) for v in value]
+        return value
+    path.write_text(json.dumps(canonical(obj),indent=2,ensure_ascii=False,sort_keys=True)+'\n',encoding='utf-8',newline='\n')
 
 def main():
     rows=[json.loads(x) for x in (ROOT/'data/maud_mae.jsonl').read_text(encoding='utf-8').splitlines()]
@@ -53,7 +61,7 @@ def main():
             m['accuracy_wilson_95_ci']=wilson(m['tp']+m['tn'],m['n'])
             taskmetrics[task]=m
         contract_scores=[sum(p[name]==p['gold'] for p in test if p['contract_id']==r['contract_id'])/len(TASKS) for r in split['test']]
-        metrics[name]={'per_task':taskmetrics,'mean_task_macro_f1':sum(m['macro_f1'] for m in taskmetrics.values())/len(TASKS),
+        metrics[name]={'per_task':taskmetrics,'mean_task_macro_f1':math.fsum(m['macro_f1'] for m in taskmetrics.values())/len(TASKS),
                        'pooled_accuracy':sum(p[name]==p['gold'] for p in test)/len(test),'accuracy_contract_bootstrap':bootstrap(contract_scores)}
     differences={}
     for other in ('majority','naive_bayes'):
@@ -76,7 +84,7 @@ def main():
         writer.writeheader()
         for name,mm in metrics.items():
             for task,m in mm['per_task'].items():
-                writer.writerow({'model':name,'task':task,**{k:m[k] for k in writer.fieldnames if k in m}})
+                writer.writerow({'model':name,'task':task,**{k:round(m[k],12) if isinstance(m[k],float) else m[k] for k in writer.fieldnames if k in m}})
     summary=['# Reproduced MAE feature results','',f"Test: {len(split['test'])} agreements, {len(test)} task annotations.",'',
              '| Model | Accuracy | Mean task macro F1 |','|---|---:|---:|']
     for n,m in metrics.items(): summary.append(f"| {n} | {m['pooled_accuracy']:.3f} | {m['mean_task_macro_f1']:.3f} |")

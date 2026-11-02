@@ -30,6 +30,8 @@ The 16 AI-generated diagnostic fragments are adversarial probes, not statistical
 
 The canonical JSONL serialization was subsequently standardized to LF line endings for cross-platform CI. The initial metrics retain the original CRLF input hash; the initial reproduction script reconstructs and verifies that representation. The parsed records, labels, split and numerical results are unchanged.
 
+Current numeric metric outputs are serialized to 12 decimal places, and task-level means use `math.fsum`, so differences in Python's floating-point summation do not produce spurious cross-version CI diffs. This precision exceeds what the sample can substantively support. Initial archived outputs retain their original numerical representation.
+
 ## Next confirmatory study
 
 Collect a new sample of merger agreements outside MAUD, preferably filed after the source corpus period; record deal year, governing law, industry and drafting-template families. Have two M&A lawyers independently label clause features and review-prompt usefulness while blinded to model outputs, adjudicating disagreements. Freeze the next implementation before opening the new test set. Report reviewer agreement, feature performance, prompt precision, missed issues, and review time.
