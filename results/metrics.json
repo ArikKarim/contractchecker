@@ -1,0 +1,433 @@
+{
+  "dataset_sha256": "ebb362e757548a14725328dbede4afb1cdaaf5682b4a74354ce228e4196f13ca",
+  "models": {
+    "majority": {
+      "accuracy_contract_bootstrap": {
+        "mean": 0.6451612903225806,
+        "percentile_95_ci": [
+          0.5645161290322581,
+          0.717741935483871
+        ],
+        "replicates": 2000,
+        "seed": 20261102,
+        "unit": "contract (four correlated task decisions)"
+      },
+      "mean_task_macro_f1": 0.38941348907984247,
+      "per_task": {
+        "buyer_actions": {
+          "accuracy": 0.8387096774193549,
+          "accuracy_wilson_95_ci": [
+            0.6736564604120674,
+            0.9290737555663471
+          ],
+          "balanced_accuracy": 0.5,
+          "f1_no": 0.9122807017543859,
+          "f1_yes": 0.0,
+          "fn": 5,
+          "fp": 0,
+          "macro_f1": 0.45614035087719296,
+          "n": 31,
+          "precision_yes": 0.0,
+          "recall_yes": 0.0,
+          "tn": 26,
+          "tp": 0
+        },
+        "consummation": {
+          "accuracy": 0.5483870967741935,
+          "accuracy_wilson_95_ci": [
+            0.37772167637354503,
+            0.7083826401947998
+          ],
+          "balanced_accuracy": 0.5,
+          "f1_no": 0.0,
+          "f1_yes": 0.7083333333333334,
+          "fn": 0,
+          "fp": 14,
+          "macro_f1": 0.3541666666666667,
+          "n": 31,
+          "precision_yes": 0.5483870967741935,
+          "recall_yes": 1.0,
+          "tn": 0,
+          "tp": 17
+        },
+        "forward_looking": {
+          "accuracy": 0.6129032258064516,
+          "accuracy_wilson_95_ci": [
+            0.4382410861966073,
+            0.7626689857961975
+          ],
+          "balanced_accuracy": 0.5,
+          "f1_no": 0.0,
+          "f1_yes": 0.76,
+          "fn": 0,
+          "fp": 12,
+          "macro_f1": 0.38,
+          "n": 31,
+          "precision_yes": 0.6129032258064516,
+          "recall_yes": 1.0,
+          "tn": 0,
+          "tp": 19
+        },
+        "shareholder_litigation": {
+          "accuracy": 0.5806451612903226,
+          "accuracy_wilson_95_ci": [
+            0.4076626249536972,
+            0.7358445693268778
+          ],
+          "balanced_accuracy": 0.5,
+          "f1_no": 0.0,
+          "f1_yes": 0.7346938775510204,
+          "fn": 0,
+          "fp": 13,
+          "macro_f1": 0.3673469387755102,
+          "n": 31,
+          "precision_yes": 0.5806451612903226,
+          "recall_yes": 1.0,
+          "tn": 0,
+          "tp": 18
+        }
+      },
+      "pooled_accuracy": 0.6451612903225806
+    },
+    "naive_bayes": {
+      "accuracy_contract_bootstrap": {
+        "mean": 0.7419354838709677,
+        "percentile_95_ci": [
+          0.6532258064516129,
+          0.8147177419354829
+        ],
+        "replicates": 2000,
+        "seed": 20261102,
+        "unit": "contract (four correlated task decisions)"
+      },
+      "mean_task_macro_f1": 0.6571957220643759,
+      "per_task": {
+        "buyer_actions": {
+          "accuracy": 0.9032258064516129,
+          "accuracy_wilson_95_ci": [
+            0.7510006155660716,
+            0.9665353558368026
+          ],
+          "balanced_accuracy": 0.7,
+          "f1_no": 0.9454545454545454,
+          "f1_yes": 0.5714285714285714,
+          "fn": 3,
+          "fp": 0,
+          "macro_f1": 0.7584415584415585,
+          "n": 31,
+          "precision_yes": 1.0,
+          "recall_yes": 0.4,
+          "tn": 26,
+          "tp": 2
+        },
+        "consummation": {
+          "accuracy": 0.6129032258064516,
+          "accuracy_wilson_95_ci": [
+            0.4382410861966073,
+            0.7626689857961975
+          ],
+          "balanced_accuracy": 0.5840336134453781,
+          "f1_no": 0.4,
+          "f1_yes": 0.7142857142857143,
+          "fn": 2,
+          "fp": 10,
+          "macro_f1": 0.5571428571428572,
+          "n": 31,
+          "precision_yes": 0.6,
+          "recall_yes": 0.8823529411764706,
+          "tn": 4,
+          "tp": 15
+        },
+        "forward_looking": {
+          "accuracy": 0.6774193548387096,
+          "accuracy_wilson_95_ci": [
+            0.5014100930808565,
+            0.8143057343364082
+          ],
+          "balanced_accuracy": 0.5986842105263157,
+          "f1_no": 0.375,
+          "f1_yes": 0.782608695652174,
+          "fn": 1,
+          "fp": 9,
+          "macro_f1": 0.5788043478260869,
+          "n": 31,
+          "precision_yes": 0.6666666666666666,
+          "recall_yes": 0.9473684210526315,
+          "tn": 3,
+          "tp": 18
+        },
+        "shareholder_litigation": {
+          "accuracy": 0.7741935483870968,
+          "accuracy_wilson_95_ci": [
+            0.6018758161665794,
+            0.886048644387375
+          ],
+          "balanced_accuracy": 0.7307692307692308,
+          "f1_no": 0.631578947368421,
+          "f1_yes": 0.8372093023255814,
+          "fn": 0,
+          "fp": 7,
+          "macro_f1": 0.7343941248470012,
+          "n": 31,
+          "precision_yes": 0.72,
+          "recall_yes": 1.0,
+          "tn": 6,
+          "tp": 18
+        }
+      },
+      "pooled_accuracy": 0.7419354838709677
+    },
+    "rules": {
+      "accuracy_contract_bootstrap": {
+        "mean": 0.7903225806451613,
+        "percentile_95_ci": [
+          0.7258064516129032,
+          0.8548387096774194
+        ],
+        "replicates": 2000,
+        "seed": 20261102,
+        "unit": "contract (four correlated task decisions)"
+      },
+      "mean_task_macro_f1": 0.6903765164745201,
+      "per_task": {
+        "buyer_actions": {
+          "accuracy": 0.8387096774193549,
+          "accuracy_wilson_95_ci": [
+            0.6736564604120674,
+            0.9290737555663471
+          ],
+          "balanced_accuracy": 0.5,
+          "f1_no": 0.9122807017543859,
+          "f1_yes": 0.0,
+          "fn": 5,
+          "fp": 0,
+          "macro_f1": 0.45614035087719296,
+          "n": 31,
+          "precision_yes": 0.0,
+          "recall_yes": 0.0,
+          "tn": 26,
+          "tp": 0
+        },
+        "consummation": {
+          "accuracy": 0.8387096774193549,
+          "accuracy_wilson_95_ci": [
+            0.6736564604120674,
+            0.9290737555663471
+          ],
+          "balanced_accuracy": 0.8529411764705883,
+          "f1_no": 0.8484848484848485,
+          "f1_yes": 0.8275862068965517,
+          "fn": 5,
+          "fp": 0,
+          "macro_f1": 0.8380355276907001,
+          "n": 31,
+          "precision_yes": 1.0,
+          "recall_yes": 0.7058823529411765,
+          "tn": 14,
+          "tp": 12
+        },
+        "forward_looking": {
+          "accuracy": 0.8387096774193549,
+          "accuracy_wilson_95_ci": [
+            0.6736564604120674,
+            0.9290737555663471
+          ],
+          "balanced_accuracy": 0.8530701754385965,
+          "f1_no": 0.8148148148148148,
+          "f1_yes": 0.8571428571428571,
+          "fn": 4,
+          "fp": 1,
+          "macro_f1": 0.8359788359788359,
+          "n": 31,
+          "precision_yes": 0.9375,
+          "recall_yes": 0.7894736842105263,
+          "tn": 11,
+          "tp": 15
+        },
+        "shareholder_litigation": {
+          "accuracy": 0.6451612903225806,
+          "accuracy_wilson_95_ci": [
+            0.46947954064368874,
+            0.788833409061346
+          ],
+          "balanced_accuracy": 0.6944444444444444,
+          "f1_no": 0.7027027027027027,
+          "f1_yes": 0.56,
+          "fn": 11,
+          "fp": 0,
+          "macro_f1": 0.6313513513513513,
+          "n": 31,
+          "precision_yes": 1.0,
+          "recall_yes": 0.3888888888888889,
+          "tn": 13,
+          "tp": 7
+        }
+      },
+      "pooled_accuracy": 0.7903225806451613
+    }
+  },
+  "nb_tuning": {
+    "buyer_actions": {
+      "dev_candidates": [
+        {
+          "alpha": 0.1,
+          "macro_f1": 0.803921568627451
+        },
+        {
+          "alpha": 1.0,
+          "macro_f1": 0.45454545454545453
+        },
+        {
+          "alpha": 10.0,
+          "macro_f1": 0.45454545454545453
+        }
+      ],
+      "selected_alpha": 0.1
+    },
+    "consummation": {
+      "dev_candidates": [
+        {
+          "alpha": 0.1,
+          "macro_f1": 0.5485636114911081
+        },
+        {
+          "alpha": 1.0,
+          "macro_f1": 0.5341614906832298
+        },
+        {
+          "alpha": 10.0,
+          "macro_f1": 0.4
+        }
+      ],
+      "selected_alpha": 0.1
+    },
+    "forward_looking": {
+      "dev_candidates": [
+        {
+          "alpha": 0.1,
+          "macro_f1": 0.8148148148148148
+        },
+        {
+          "alpha": 1.0,
+          "macro_f1": 0.47368421052631576
+        },
+        {
+          "alpha": 10.0,
+          "macro_f1": 0.47368421052631576
+        }
+      ],
+      "selected_alpha": 0.1
+    },
+    "shareholder_litigation": {
+      "dev_candidates": [
+        {
+          "alpha": 0.1,
+          "macro_f1": 0.6411483253588517
+        },
+        {
+          "alpha": 1.0,
+          "macro_f1": 0.6534017971758665
+        },
+        {
+          "alpha": 10.0,
+          "macro_f1": 0.4409937888198757
+        }
+      ],
+      "selected_alpha": 1.0
+    }
+  },
+  "paired_accuracy_differences": {
+    "rules_minus_majority": {
+      "mean": 0.14516129032258066,
+      "percentile_95_ci": [
+        0.04838709677419355,
+        0.24213709677419246
+      ],
+      "replicates": 2000,
+      "seed": 20261102,
+      "unit": "contract (four correlated task decisions)"
+    },
+    "rules_minus_naive_bayes": {
+      "mean": 0.04838709677419355,
+      "percentile_95_ci": [
+        -0.04032258064516129,
+        0.14516129032258066
+      ],
+      "replicates": 2000,
+      "seed": 20261102,
+      "unit": "contract (four correlated task decisions)"
+    }
+  },
+  "protocol": "Exploratory v1.1 pilot; own agreement-disjoint split, not official MAUD benchmark. Rules revised after v1 test inspection; v1.1 test metrics are post hoc. NB alpha selected on dev only. Initial v1 results preserved in initial_metrics.json.",
+  "review_prompt_counts": {
+    "dev": {
+      "D1": 30,
+      "D2": 29,
+      "D3": 19,
+      "D4": 28,
+      "D5": 28,
+      "D6": 12
+    },
+    "test": {
+      "D1": 31,
+      "D2": 30,
+      "D3": 18,
+      "D4": 29,
+      "D5": 28,
+      "D6": 12
+    },
+    "train": {
+      "D1": 89,
+      "D2": 91,
+      "D3": 35,
+      "D4": 90,
+      "D5": 91,
+      "D6": 51
+    }
+  },
+  "rules_sha256": "5a951e420b2935d6f886bf17215c74abb56e1de21f50b8e570106f7158c6a5b2",
+  "split_counts": {
+    "dev": 30,
+    "test": 31,
+    "train": 91
+  },
+  "synthetic_stress": {
+    "clause_fragments": 16,
+    "contracts": 0,
+    "correct": 14,
+    "failures": [
+      {
+        "correct": false,
+        "expected": 0,
+        "id": "S06",
+        "prediction": 1,
+        "task": "shareholder_litigation"
+      },
+      {
+        "correct": false,
+        "expected": 1,
+        "id": "S12",
+        "prediction": 0,
+        "task": "shareholder_litigation"
+      },
+      {
+        "correct": false,
+        "expected": 0,
+        "id": "S15",
+        "prediction": 1,
+        "task": "buyer_actions"
+      },
+      {
+        "correct": false,
+        "expected": 0,
+        "id": "S16",
+        "prediction": 1,
+        "task": "shareholder_litigation"
+      }
+    ],
+    "provenance": "AI-authored diagnostic cases with AI-assigned expectations, no independent legal validation; not an accuracy benchmark.",
+    "task_decisions": 18
+  },
+  "test_annotations": 124,
+  "unvalidated_outputs": "Review prompts have no independent quality or litigation labels. Counts measure cue prevalence only."
+}
