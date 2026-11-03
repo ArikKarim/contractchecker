@@ -1,0 +1,14 @@
+{
+  "dataset": "MAUD v1",
+  "publisher": "The Atticus Project",
+  "source_url": "https://raw.githubusercontent.com/The-Atticus-Project/maud/main/data.zip",
+  "source_sha256": "75af5a33d038e9254864f043da38072490ffe11e8488d58d0a2dd39c8f554519",
+  "accessed": "2026-11-02",
+  "license": "CC BY 4.0",
+  "license_url": "https://www.atticusprojectai.org/legal/",
+  "homepage": "https://www.atticusprojectai.org/maud/",
+  "paper": "https://arxiv.org/abs/2301.00876",
+  "citation": "Wang et al. (2023). MAUD: An Expert-Annotated Legal NLP Dataset for Merger Agreement Understanding.",
+  "transformations": "Retain main original MAE text and four binary tasks; preserve labels and upstream IDs; regroup by agreement/normalized exact text; no abridged or rare-answer examples.",
+  "data_notices": "MAUD terms do not establish litigation outcomes or remove any third-party rights in underlying SEC exhibits."
+}

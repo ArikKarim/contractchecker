@@ -1,0 +1,91 @@
+{
+  "source_archive_sha256": "75af5a33d038e9254864f043da38072490ffe11e8488d58d0a2dd39c8f554519",
+  "derived_sha256": "ebb362e757548a14725328dbede4afb1cdaaf5682b4a74354ce228e4196f13ca",
+  "archive_csv_rows": 39231,
+  "contracts": 152,
+  "task_annotations": 608,
+  "tasks": {
+    "forward_looking": "MAE Forward looking standard (Y/N)",
+    "consummation": "MAE definition includes adverse impact on Target's ability to consummate (Y/N)",
+    "shareholder_litigation": "Target stockholder proceedings-Answer (Y/N)",
+    "buyer_actions": "Actions taken by Buyer-Answer (Y/N)"
+  },
+  "split_seed": "contractchecker-maud-v1-2026-11-02",
+  "split_unit": "normalized exact text group; all tasks from one contract stay together",
+  "split_contract_counts": {
+    "train": 91,
+    "dev": 30,
+    "test": 31
+  },
+  "class_counts": {
+    "train": {
+      "forward_looking": {
+        "0": 16,
+        "1": 75
+      },
+      "consummation": {
+        "0": 23,
+        "1": 68
+      },
+      "shareholder_litigation": {
+        "0": 36,
+        "1": 55
+      },
+      "buyer_actions": {
+        "0": 80,
+        "1": 11
+      }
+    },
+    "dev": {
+      "forward_looking": {
+        "0": 3,
+        "1": 27
+      },
+      "consummation": {
+        "0": 10,
+        "1": 20
+      },
+      "shareholder_litigation": {
+        "0": 13,
+        "1": 17
+      },
+      "buyer_actions": {
+        "0": 25,
+        "1": 5
+      }
+    },
+    "test": {
+      "forward_looking": {
+        "0": 12,
+        "1": 19
+      },
+      "consummation": {
+        "0": 14,
+        "1": 17
+      },
+      "shareholder_litigation": {
+        "0": 13,
+        "1": 18
+      },
+      "buyer_actions": {
+        "0": 26,
+        "1": 5
+      }
+    }
+  },
+  "exact_text_groups": 152,
+  "normalized_text_groups": 152,
+  "replacement_characters": 0,
+  "main_records_with_source_omission": 5,
+  "upstream_contract_overlap": {
+    "train_dev": 76,
+    "train_test": 86,
+    "dev_test": 40
+  },
+  "empty_texts": 0,
+  "duplicate_contract_task_pairs": 0,
+  "missing_labels": 0,
+  "cross_split_contract_overlap": 0,
+  "cross_split_normalized_text_overlap": 0,
+  "near_duplicate_templates": "Not deduplicated; this remains a generalization limitation."
+}

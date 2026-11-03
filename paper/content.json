@@ -1,0 +1,620 @@
+{
+  "title": "Feature classification in merger agreement material adverse effect definitions",
+  "subtitle": "An exploratory comparison of lexical rules and a naive Bayes baseline",
+  "date": "November 2, 2026",
+  "keywords": [
+    "merger agreements",
+    "material adverse effect",
+    "legal natural language processing",
+    "MAUD",
+    "contract drafting"
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 0,
+      "text": "Abstract"
+    },
+    {
+      "type": "paragraph",
+      "text": "Material adverse effect (MAE) definitions allocate risks that arise between signing and closing a merger. Their interpretation depends on the scope of exceptions and on the identity of the party whose conduct is described. This study evaluates whether inexpensive text classifiers recover four annotated features of those definitions. The sample contains 152 MAUD agreement excerpts and 608 expert-derived binary labels. All questions from an agreement remain in one partition: 91 training, 30 development and 31 test agreements. A task-specific majority baseline, multinomial naive Bayes and two versions of lexical rules are compared. The initial rules classify 79 of 124 test decisions correctly (63.7%; mean task macro F1, 0.568); naive Bayes classifies 92 correctly (74.2%; 0.657). A rule revision made after inspecting test errors classifies 98 correctly (79.0%; 0.690). This revised estimate is post hoc. Its overall accuracy conceals zero recall for buyer-action exclusions and complete four-feature agreement on only 10 of 31 excerpts. Inspection identifies failures in boundary detection, grammatical attribution and implicit scope. The tool also presents six drafting-review questions, discussed alongside the observed failures and selected Delaware decisions. Their usefulness has not been independently evaluated. The experiment establishes a reproducible feature-classification baseline and identifies specific requirements for a subsequent reviewer study. It does not measure drafting quality, litigation incidence or the effect of an edit on either outcome."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "1 Introduction"
+    },
+    {
+      "type": "paragraph",
+      "text": "A merger agreement can exclude pandemic effects from its MAE definition while separately requiring the seller to obtain consent before changing its operations. It can exclude actions taken by the buyer while leaving actions taken by the target at the buyer's request to a different provision. A classifier that locates the words pandemic or Parent has not resolved either relationship. The relevant reading task is to determine which event, actor and contractual obligation a qualification modifies."
+    },
+    {
+      "type": "paragraph",
+      "text": "Litigation outcomes depend on conduct, incentives, enforcement decisions and contract interpretation. The available reference labels describe document features. MAUD supplies the latter [1]. It permits an initial test of feature recognition, with expert-derived reference answers, before undertaking the separate task of linking agreements to disputes. Treating those feature labels as litigation labels would change the meaning of the data."
+    },
+    {
+      "type": "paragraph",
+      "text": "The study therefore addresses three questions. First, how accurately do lexical rules and a small statistical model recover four features within an already extracted MAE definition? Second, which errors arise from surface wording, clause boundaries or actor attribution? Third, which drafting questions follow from those errors when considered alongside decisions interpreting acquisition agreements? The first question has a quantitative reference standard. The second uses inspected examples and diagnostic fragments. The third is an interpretive exercise; no experiment here tests whether the proposed questions improve a draft."
+    },
+    {
+      "type": "paragraph",
+      "text": "The contribution is a narrow baseline with an auditable revision history. It includes the source excerpt for each prediction, a partition that separates agreements, task-level confusion matrices, uncertainty estimates that resample agreements, and both initial and revised rule results. The initial implementation performed poorly. Its closing-ability matcher missed every positive test example. Revising that matcher improved the pooled score, but a simultaneous change to buyer-action matching removed true positives as well as false positives. Reporting only the final accuracy would conceal both the test-informed revision and an unresolved task failure."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "2 Contractual setting and related work"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.1 The MAE reading task"
+    },
+    {
+      "type": "paragraph",
+      "text": "An MAE definition can contain a business-condition branch, a branch addressing the target's ability to complete the transaction, exclusions for specified causes, and exceptions that restore some excluded effects. A disproportionate-effect qualification may apply to selected exclusions rather than to the entire definition. The same definition may also distinguish an observable event, such as a missed earnings projection, from the facts that caused it. This structure makes both the location and scope of qualifying language relevant to the selected labels."
+    },
+    {
+      "type": "paragraph",
+      "text": "Akorn, Inc. v. Fresenius Kabi AG concerned an agreement with distinct closing conditions involving representations, covenant compliance and an MAE. The Court of Chancery held that the buyer could refuse to close under the MAE condition and could terminate on other grounds; the analysis turns on the relevant contractual route [2]. This study uses that distinction to motivate separate checks for a forward-looking standard and an ability-to-consummate branch. It does not estimate whether facts in a particular transaction satisfy the MAE standard."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bardy Diagnostics, Inc. v. Hill-Rom, Inc. supplies a specific reason to inspect comparator wording. In assessing disproportionate impact, the court considered the agreement's restriction to similarly situated companies operating in the same industries or locations [3]. The drafting question is which comparison the parties intend, including whether geography, product characteristics or a regulatory setting restricts the group. The lexical tool detects the word disproportionate; it does not identify the correct comparator businesses."
+    },
+    {
+      "type": "paragraph",
+      "text": "AB Stable VIII LLC v. MAPS Hotels and Resorts One LLC involved changes to hotel operations during the COVID-19 pandemic. The Delaware Supreme Court affirmed the conclusion that the seller's failure to obtain the buyer's consent breached the ordinary-course covenant and excused closing [4]. The case motivates a cross-provision review question: whether an emergency response permitted or contemplated in one part of an agreement also complies with consent and operating obligations elsewhere. The present analyzer receives no operating covenant and cannot answer that question."
+    },
+    {
+      "type": "paragraph",
+      "text": "Snow Phipps Group, LLC v. KCAKE Acquisition, Inc. also addressed pandemic-related effects. The court applied the exclusion's causal wording and a disproportionate-impact qualification when rejecting the buyer's MAE position [5]. The resulting drafting question is whether the chosen causal connector covers indirect effects and mixed causes. This is a question about negotiated scope, not a proposal to replace every broad connector with a narrow one."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.2 Relation to the MAUD benchmark"
+    },
+    {
+      "type": "paragraph",
+      "text": "MAUD was developed for merger-agreement reading comprehension. Its task is to answer deal-point questions from extracted contractual text, with some questions allowing multiple answers [1]. The present study selects four binary questions from the source main records. It excludes the separate abridged and rare-answer records and does not evaluate clause extraction. Published MAUD model scores use different tasks, partitions and aggregation choices. The percentages reported below are not directly comparable with those scores."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "3 Data"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.1 Source population and selection"
+    },
+    {
+      "type": "paragraph",
+      "text": "The publisher identifies MAUD as a public dataset under CC BY 4.0 [6, 7]. The original paper describes MAUD as a selected set of completed 2021 acquisitions of U.S. public targets above a $200 million value threshold [1, p. 16374]. This selection matters for the intended research direction: the corpus is conditioned on completed transactions. It cannot, by itself, support an estimate of whether a clause increases the chance that a signed acquisition fails to close. Selected judicial decisions discussed here are legal context, not outcome annotations for these agreements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The source archive is downloaded from the official repository and accepted only if its SHA-256 matches the pinned release. Preparation reads all three supplied CSV files and retains records labeled main whose question matches one of the four strings listed in Appendix A. Each retained answer must be Yes or No, mapped respectively to 1 and 0. All four records for a contract must contain identical text. Duplicate contract-question pairs, conflicting text, missing labels and empty excerpts cause preparation to fail. The procedure produces 152 agreement records with four labels each."
+    },
+    {
+      "type": "paragraph",
+      "text": "Question selection was exploratory. These four questions provided complete binary annotations across the 152 agreements and different reading demands: prospective language, a closing branch, litigation scope and buyer-related conduct. Their positive-label counts also varied substantially. They were not chosen to represent all MAE analysis or to serve as established predictors of disputes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Original text is retained, including page references and omission markers. The 152 excerpts have a median length of 4,530.5 Unicode characters and a range of 2,186 to 8,654 characters. Counting lowercase alphabetic strings with the model's tokenizer gives a median of 700 unigrams per excerpt, with a range of 342 to 1,335. These are lengths of selected excerpts, not whole agreements. The full contracts are available through the downloader but were not the input to the reported experiment."
+    },
+    {
+      "type": "table",
+      "name": "classes",
+      "caption": "Table 1. Reference-label distribution by agreement partition.",
+      "note": "Entries are Yes / No counts. Each agreement supplies one answer to each question. The split was not stratified by labels."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.2 Agreement partitions and data quality"
+    },
+    {
+      "type": "paragraph",
+      "text": "For the selected questions, agreement IDs occur in more than one upstream file: 76 IDs overlap between upstream training and development, 86 between training and test, and 40 between development and test. These counts refer to the combined four-question dataset. They do not establish that the original benchmark's task-specific evaluation is invalid. A multi-question model used here could nevertheless encounter text from a test agreement through a different question if it simply reused those file boundaries."
+    },
+    {
+      "type": "paragraph",
+      "text": "A new partition is therefore assigned at the agreement level. Text is case-folded and consecutive whitespace is collapsed solely for duplicate grouping; the stored input remains unchanged. Groups are ordered by SHA-256 of the fixed split seed concatenated with the normalized-text hash. The first floor(0.60G) groups form training, the next floor(0.20G) form development, and the remainder form test, where G is the number of groups. All 152 normalized texts are distinct, yielding 91, 30 and 31 agreements. No agreement or exact normalized text crosses partitions. Related drafting templates were not identified or grouped."
+    },
+    {
+      "type": "paragraph",
+      "text": "Five source main excerpts contain the marker <omitted>: contract_26, contract_30, contract_42, contract_77 and contract_129. Three are assigned to training and two to test. They are retained because replacing or reconstructing missing language would alter the evidence supplied with the source labels. The audit found no Unicode replacement characters in the retained text. Neither finding proves that the excerpts are otherwise complete or free of extraction errors. Results describe the retained records as distributed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The class distribution varies across partitions. For example, the forward-looking label is positive in 27 of 30 development agreements but only 19 of 31 test agreements. Buyer-action exclusions supply 11 positive training examples and five positive test examples. These small class counts limit both model fitting and interpretation of a percentage score; a single buyer-action test decision changes positive recall by 20 percentage points."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "4 Methods"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.1 Unit of prediction and model comparison"
+    },
+    {
+      "type": "paragraph",
+      "text": "For agreement i and question t, y_it is the binary reference answer and yhat_it is a model's binary prediction. There are four questions per agreement. Each method receives the same source excerpt, and each question is scored against its own label. The majority and statistical baselines use training labels. The deterministic rules use regular expressions. The interactive application runs the rules only; naive Bayes is an experimental comparator and does not supply the application's drafting prompts."
+    },
+    {
+      "type": "paragraph",
+      "text": "The majority baseline predicts the most frequent training answer for each question, with a tie resolved in favor of Yes. For this split it predicts Yes for forward-looking wording, closing ability and stockholder litigation, and No for buyer actions. Its performance establishes how much can be achieved without reading the input. The comparator is especially important for the buyer-action task, where a constant No prediction is correct for 26 of the 31 test agreements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.2 Lexical rules and clause boundaries"
+    },
+    {
+      "type": "paragraph",
+      "text": "The rule system searches case-insensitively and returns the first matching span. It divides the input at the first occurrence of provided however, excluding, except that or except for. Forward-looking and closing-ability checks search before that boundary. Stockholder-litigation and buyer-action checks search after it; if no boundary is recognized, those two checks search the entire input. This is a positional approximation of the definition's structure. It does not parse nested provisos, resolve cross references or recognize every formulation that introduces exclusions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The forward-looking rule searches for modal and expectation language, including would, could, may or will followed within the specified word window by expected or likely, and the phrase reasonably likely. The closing-ability rule searches for interference or prevention verbs near consummation or completion language, or a limited ability-to-consummate construction. The stockholder-litigation rule searches for stockholder or shareholder near litigation, suit, proceeding, action or claim language within 220 characters. The revised buyer-action rule restricts matches to a direct actor construction such as action taken by Parent. The complete expressions and code versions remain in the repository."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each returned span is represented by an inclusive start offset and exclusive end offset in the original Unicode string. The quoted evidence must equal the original input slice at those offsets. This condition verifies retrieval of a literal passage. It does not verify that the passage entails the reference answer. A diagnostic phrase may be negated, occur inside an exception, or describe an actor different from the one required by the question."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.3 Statistical text classifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "One multinomial naive Bayes model is fitted for each question. Input is lowercased and tokenized using the expression [a-z]+. Features consist of unigrams and adjacent bigrams. Each feature's within-excerpt count is capped at three; punctuation, capitalization and numerical section references are consequently not preserved as model features. The vocabulary is the union of features observed in the two training classes. Features absent from that vocabulary contribute zero to a test score."
+    },
+    {
+      "type": "equation",
+      "text": "P(w | y) = (N_yw + alpha) / (sum_v N_yv + alpha |V|)",
+      "number": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "Here N_yw is the sum of capped counts for feature w in training excerpts with class y, V is the training vocabulary, and alpha is additive smoothing. The models use equal class priors. At prediction time the log-likelihood ratio is summed over features, using the same capped counts c_w(x). A score of zero is assigned to Yes."
+    },
+    {
+      "type": "equation",
+      "text": "s(x) = sum_w c_w(x) log[P(w | 1) / P(w | 0)];  yhat = 1 if s(x) >= 0",
+      "number": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Smoothing is selected independently for each question from alpha in {0.1, 1, 10}. The selected value maximizes development macro F1; ties retain the first value in that order. Selected alpha values are 0.1 for forward-looking wording, closing ability and buyer actions, and 1 for stockholder litigation. The model is not refitted on training plus development data. No threshold tuning, pretrained embeddings, language-model inference or fine-tuning is used. The independence assumption is an approximation: unigram and bigram features are necessarily related, and the score is not interpreted as a calibrated probability."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.4 Metrics and uncertainty"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every question is summarized by true positives (TP), true negatives (TN), false positives (FP) and false negatives (FN). Positive-class precision is TP/(TP+FP), and recall is TP/(TP+FN). Positive F1 is 2TP/(2TP+FP+FN); negative F1 is 2TN/(2TN+FP+FN). Binary macro F1 is the arithmetic mean of the two class F1 scores. The study reports an unweighted mean of these four task-level macro F1 values. This gives each task and each class equal weight, unlike pooled accuracy."
+    },
+    {
+      "type": "equation",
+      "text": "Accuracy = (1 / 4n) sum_i sum_t I(yhat_it = y_it)",
+      "number": 3
+    },
+    {
+      "type": "paragraph",
+      "text": "The test set has n = 31 agreements, hence 124 decisions. Pooled accuracy equals the mean of each agreement's fraction of correct answers because every agreement supplies four labels. It is not accuracy over 124 independent agreements. Accuracy intervals are percentile bootstrap intervals from 2,000 draws of 31 agreements with replacement, seed 20261102 [8]. All four answers from a sampled agreement move together. Paired differences use the same resampled agreement IDs for both methods. Per-question accuracy also has Wilson intervals in the machine-readable results [9]."
+    },
+    {
+      "type": "paragraph",
+      "text": "The implementation defines a metric with a zero denominator as zero to permit deterministic aggregation. For a method with no positive predictions, precision has no empirical denominator; tables below display it as not defined rather than treating zero as evidence that an observed positive prediction was wrong. Bootstrap intervals quantify variation across the observed agreements. They do not account for shared drafting templates, changes induced by test inspection, uncertain labels or population selection."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.5 Revision history and diagnostic fragments"
+    },
+    {
+      "type": "paragraph",
+      "text": "The initial rules were written before the first evaluation on the custom test partition. After inspecting those errors, two changes produced version 1.1: the closing-ability expression was broadened to handle inflection, spacing and a common party construction; the buyer-action expression was narrowed to distinguish direct buyer conduct from target conduct requested by the buyer. The forward-looking and stockholder-litigation expressions were unchanged. This revision used test information. The initial code and outputs are retained, and the revised score is designated post hoc throughout this manuscript. The naive Bayes smoothing choices were development-only and were not changed after the test inspection."
+    },
+    {
+      "type": "paragraph",
+      "text": "A separate file contains 16 AI-authored clause fragments with 18 expected decisions. The fragments probe selected grammatical and logical constructions, including negation and target action at a buyer's request. They are not complete merger agreements. The same AI-assisted workflow created the text and assigned its expectations, and no independent lawyer adjudicated them. They are reported as diagnostic checks rather than additional reference-labeled test observations."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "5 Results"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5.1 Overall classification"
+    },
+    {
+      "type": "table",
+      "name": "overall",
+      "caption": "Table 2. Classification results on 31 test agreements.",
+      "note": "Intervals are 95% agreement-level percentile bootstrap intervals for accuracy. Macro F1 is the unweighted mean of four binary task macro F1 values. Version 1.1 used test-error information; its interval is not corrected for that adaptation."
+    },
+    {
+      "type": "paragraph",
+      "text": "The initial rules correctly classify 79 of 124 decisions, one fewer than the majority baseline (80). Their mean task macro F1 is nevertheless higher, 0.568 versus 0.389, because the constant baseline obtains no true positives or no true negatives on a task. Naive Bayes correctly classifies 92 decisions with mean task macro F1 of 0.657. The revised rules correctly classify 98, with mean task macro F1 of 0.690. The last comparison describes a revised implementation on a reused test set; it is not an independent replication."
+    },
+    {
+      "type": "figure",
+      "name": "accuracy",
+      "caption": "Figure 1. Accuracy and agreement-level bootstrap intervals. The revised-rule point is measured after test inspection. Intervals show resampling uncertainty only."
+    },
+    {
+      "type": "paragraph",
+      "text": "The revised-rule accuracy difference from naive Bayes is 4.8 percentage points, with a paired bootstrap interval of -4.0 to 14.5 points. Its difference from the majority baseline is 14.5 points, with an interval of 4.8 to 24.2 points. The first interval includes zero. The second excludes zero under the resampling procedure but does not correct for test-informed model revision. Neither comparison supports a confirmatory claim that the revised method will be better on new agreements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5.2 Task performance and complete agreement profiles"
+    },
+    {
+      "type": "table",
+      "name": "task_scores",
+      "caption": "Table 3. Macro F1 by question and method.",
+      "note": "Each entry uses 31 test labels. Initial and revised rules are shown separately so the effects of the two expression changes are visible."
+    },
+    {
+      "type": "table",
+      "name": "confusion",
+      "caption": "Table 4. Revised-rule confusion matrices and positive-class retrieval.",
+      "note": "Precision and recall concern Yes. A dash denotes precision with no positive predictions. The software records that undefined ratio as zero for aggregation; no positive prediction was made on the buyer-action task."
+    },
+    {
+      "type": "paragraph",
+      "text": "Forward-looking wording has 15 true positives, one false positive and four false negatives under either rule version. Revised closing-ability matching recovers 12 of 17 positive labels with no false positives. Stockholder-litigation matching retrieves seven of 18 positive labels, also without false positives. Its precision of 1.00 therefore applies to only seven retrieved examples, and recall remains 0.389. Buyer-action matching retrieves none of the five positive labels. Its 0.839 accuracy is identical to the constant No baseline and must not be interpreted as successful exclusion recognition."
+    },
+    {
+      "type": "paragraph",
+      "text": "Naive Bayes has different failure rates: it retrieves 18 of 19 forward-looking positives, 15 of 17 closing-ability positives, all 18 stockholder-litigation positives and two of five buyer-action positives. Its false-positive counts on those tasks are nine, ten, seven and zero, respectively. Thus, for stockholder litigation the statistical model recovers labels missed by the literal rule at the cost of seven false positives. A decision about which output would assist a reviewer requires a cost or utility study; macro F1 does not supply that preference."
+    },
+    {
+      "type": "paragraph",
+      "text": "Requiring all four labels to be correct changes the apparent level of completion. Revised rules and naive Bayes each match the entire reference profile for 10 of 31 agreements (32.3%); the majority baseline does so for five. Revised rules return three correct labels for 16 agreements and two for five. These counts concern the four selected questions only. They do not measure whether the full MAE definition, its application to facts or the surrounding agreement has been reviewed correctly."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5.3 What changed between rule versions"
+    },
+    {
+      "type": "table",
+      "name": "transitions",
+      "caption": "Table 5. Test decisions changed by the rule revision.",
+      "note": "A correction is an incorrect v1 decision made correct by v1.1. A regression is a correct v1 decision made incorrect. Counts are paired within the same agreement and question."
+    },
+    {
+      "type": "paragraph",
+      "text": "The closing-ability change corrects 12 false negatives without changing any previously correct decision. The buyer-action change removes nine false positives but also converts two true positives into false negatives, a net gain of seven correct answers. Combined, the changes yield 21 corrections and two regressions, or 19 additional correct decisions. The improvement is not uniform across tasks: buyer-action positive recall falls from 0.400 to zero."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5.4 Review prompts and synthetic diagnostics"
+    },
+    {
+      "type": "table",
+      "name": "prompts",
+      "caption": "Table 6. Drafting-prompt activation on the test excerpts.",
+      "note": "Counts indicate that a textual cue activated the prompt. They are not counts of drafting defects, useful advice or predicted disputes. Multiple prompts can occur in the same excerpt."
+    },
+    {
+      "type": "paragraph",
+      "text": "All 31 test excerpts activate the disproportionate-effect prompt, and 30 activate the causal-language prompt. Pandemic or public-health wording activates a prompt in 29; clause or section references do so in 28. Such common prompts have little ability to distinguish agreements within this sample. Their possible value is to organize a review of recurring choices, which requires separate evaluation. The underlying-cause prompt activates in 18 excerpts and the closing-branch prompt in 12. The latter inherits the closing-ability detector's false negatives."
+    },
+    {
+      "type": "paragraph",
+      "text": "The synthetic fragments produce 11 of 18 expected decisions under v1 and 14 under v1.1. Remaining failures include a statement that does not exclude stockholder litigation, a negated buyer-action exclusion, incidental co-occurrence of shareholder and litigation language, and a broad any-person exclusion. These are selected counterexamples. The proportion passed is not a sampling estimate and should not be combined with the 124 expert-derived test decisions."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "6 Error analysis"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.1 Party constructions and genuine clause boundaries"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two different mechanisms produce closing-ability false negatives. In contract_8, the relevant words precede the recognized boundary:"
+    },
+    {
+      "type": "quotation",
+      "text": "the ability of such Person and its Subsidiaries to consummate the Transactions before the End Date",
+      "label": "contract_8, characters 373-471; reference Yes, revised prediction No"
+    },
+    {
+      "type": "paragraph",
+      "text": "The boundary occurs at character 473, so the passage is inside the searched region. The pattern's limited party construction cannot accommodate such Person and its Subsidiaries. This example corrects the earlier project error note, which attributed this miss to the clause boundary. In contract_14 and contract_18, a closing branch instead appears after the exclusions. Those cases also use such party and to timely consummate, which the expression does not cover. Their failure cannot be attributed to position alone."
+    },
+    {
+      "type": "paragraph",
+      "text": "Contract_146 isolates a more direct boundary error. Its exclusions begin with provided that, a formulation absent from the boundary expression. The function selects a later provided, however at character 4,825. Both stockholder-litigation and buyer-action checks consequently begin too late, although the following buyer phrase occurs at characters 2,319-2,370:"
+    },
+    {
+      "type": "quotation",
+      "text": "any action taken by Parent or any Affiliate thereof",
+      "label": "contract_146; reference buyer-action label Yes, revised prediction No"
+    },
+    {
+      "type": "paragraph",
+      "text": "The complete buyer-action expression matches this construction if it is searched. A stockholder-litigation phrase at characters 2,118-2,221 is similarly excluded from the search region. This is not a problem of remote inference: the words themselves are present and satisfy the lexical expressions. A positional assumption prevents their retrieval."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.2 Actor attribution and the cost of narrowing a pattern"
+    },
+    {
+      "type": "paragraph",
+      "text": "Contract_29 explains one original buyer-action false positive. Its text describes an action performed by the Company or its subsidiaries at Parent's written request. The initial expression spans from action language to the later phrase of Parent and returns Yes against a No reference label. Version 1.1 eliminates that match. This behavior supports distinguishing the actor who performs an action from the party who requests or approves it."
+    },
+    {
+      "type": "paragraph",
+      "text": "The narrower expression also misses positive reference labels. Contract_32 excludes an action expressly required or permitted to be taken by Parent, Purchaser or the Company and separately addresses a breach by Parent or Purchaser. The added modifiers prevent the direct actor pattern from matching the former; the list of actor nouns does not include breach for the latter. Contract_43 is the other correct-to-incorrect transition. Its surrounding provisions concern Parent's identity and related circumstances as well as requested target conduct. These examples show disagreement with the source labels; the present study does not re-adjudicate how the annotation category should treat every type of buyer-related effect."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.3 Word order, entailment and prospective wording"
+    },
+    {
+      "type": "paragraph",
+      "text": "The stockholder-litigation expression has an avoidable directional asymmetry. Contract_96 describes an Action initiated or threatened by stockholders. The expression recognizes action after stockholder language, but the reverse-order alternative omits action from its event vocabulary. The relevant passage is within the search region and shorter than the distance limit. Its miss follows from the expression's alternatives, not from a general inability to find the words."
+    },
+    {
+      "type": "paragraph",
+      "text": "Contract_72 presents a different problem. It excludes litigation by any Person concerning the agreement or transaction. The source stockholder-litigation label is Yes, although the passage does not name stockholders. A matcher requiring that name cannot reproduce the broader label without accounting for the set of claimants encompassed by Person. Expanding the word list alone would risk treating unrelated litigation as a stockholder exclusion; the synthetic co-occurrence fragment demonstrates that risk."
+    },
+    {
+      "type": "paragraph",
+      "text": "Forward-looking errors likewise concern both vocabulary and scope. Contract_30 uses would materially impair in an operative branch and has a positive reference label. The rule requires expected or likely after the modal and returns No. Contract_141 produces the opposite error: prospective wording appears within an exclusion introduced by an unrecognized provided, that formulation. The resulting search region is too long, and a No reference answer is predicted Yes. An expectation phrase is therefore neither necessary nor sufficient under these source labels."
+    },
+    {
+      "type": "paragraph",
+      "text": "These examples were selected after inspecting errors. They identify mechanisms in named records, not the frequency of each mechanism in the corpus. No exhaustive, blinded error taxonomy or inter-reviewer agreement study was performed. The supplemental statistics file supplies the original excerpt hash, source identifiers and exact offsets for each quoted passage."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "7 Implications for drafting review"
+    },
+    {
+      "type": "paragraph",
+      "text": "The inspected errors motivate explicit treatment of clause scope and party roles in a subsequent implementation. The drafting recommendations below have a different basis. They combine the inspected language with the selected decisions in Section 2. They are questions for negotiation and review, not validated edits or findings that the sampled agreements were poorly drafted."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7.1 Allocate exclusions to named branches"
+    },
+    {
+      "type": "paragraph",
+      "text": "Where a definition covers both business deterioration and the ability to close, a reviewer should identify the exclusions applicable to each branch. A qualification placed after a long list can be difficult to associate with the branch it modifies. A drafting record can state, for each branch, the prospective standard, relevant time period and applicable exclusions. This would make the intended allocation explicit to the reviewer, although it may differ from the allocation either party prefers. Contract_14 and contract_18 show why the closing branch must remain visible even when it follows exclusions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7.2 Define the disproportionate-effect comparison"
+    },
+    {
+      "type": "paragraph",
+      "text": "A disproportionate-effect exception requires a comparison group and a way to compare effects. The reviewer should record whether the parties intend an industry-wide comparison or a narrower group defined by products, scale, geography or regulatory exposure. Bardy provides a reason to examine those qualifications carefully [3]. The review should also distinguish counting the entire event from counting only its incremental disproportionate effect. The fact that every test excerpt activates a disproportionate cue does not tell us whether its comparator is sufficiently specified."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7.3 State the treatment of causes and indicators"
+    },
+    {
+      "type": "paragraph",
+      "text": "An exclusion for missed projections may remove the missed number while allowing the operational facts behind it to count. A review should trace the underlying-cause proviso and ask whether another exclusion continues to protect those same facts. Causal connectors also warrant a separate decision: whether an effect merely related to an excluded cause is protected, and how mixed causes are treated. Snow Phipps demonstrates that broad relational language can have substantive reach [5]. A consistent connector is useful only if it expresses the parties' intended causal threshold; stylistic uniformity is not itself the objective."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7.4 Separate performance from request and consent"
+    },
+    {
+      "type": "paragraph",
+      "text": "The parties can allocate buyer conduct, target conduct requested by the buyer, and target conduct approved by the buyer differently. A reviewer should identify each category and the relevant party definitions rather than treating every mention of Parent as an equivalent exclusion. The action in contract_29 is performed by the target. The positive label in contract_32 involves a more elaborate description of permitted actors. The intended commercial allocation should determine the wording; compatibility with a lexical expression is not a drafting objective."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7.5 Check covenants and remedies outside the definition"
+    },
+    {
+      "type": "paragraph",
+      "text": "A pandemic reference in the definition should direct the reviewer to the operating covenant, consent mechanism, notice procedure, closing conditions and termination rights. AB Stable shows that those provisions can impose independent obligations [4]. The reviewer should determine whether emergency actions require prior consent, whether consent can be withheld, what notice is required and which consequence follows noncompliance. The present tool can only ask the reviewer to make that comparison; it has not read those provisions. Likewise, a section reference in an MAE proviso should be checked against the actual provision after a draft is renumbered or amended."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "8 Limitations and validation requirements"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "8.1 Scope of the measured result"
+    },
+    {
+      "type": "paragraph",
+      "text": "The reference standard consists of four source annotations. It does not rate the usefulness of advice, the clarity of a draft, a party's likelihood of breach, or a court's decision. There are no outcome labels for suits, settlements, delay or legal costs. The completed-deal selection of the source corpus is particularly restrictive for studying termination disputes. Governing law was not verified for the retained agreements, so the Delaware discussion should not be read as a characterization of the sample's controlling law."
+    },
+    {
+      "type": "paragraph",
+      "text": "The sample is small, especially for the buyer-action class, and exact normalized-text grouping does not remove related templates. The statistical model can learn recurring drafting language shared across deals. The input is also favorable relative to an end-to-end application: an expert has already selected the MAE definition. Errors in locating the definition, OCR, party-definition retrieval and cross-document references are outside the reported denominators. Five retained excerpts include source omissions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Version 1.1 was adapted after test inspection. The final rule score therefore includes selection effects that the bootstrap does not estimate. Data were inspected during project development, and the analysis was not preregistered. The original and revised outputs are preserved to make this chronology assessable. The diagnostic fragment expectations were generated by the same AI-assisted process as the implementation; their agreement rate has no independent validation status."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "8.2 A separate evaluation of review assistance"
+    },
+    {
+      "type": "paragraph",
+      "text": "A subsequent study should collect a new agreement sample, identify drafting families and freeze the implementation before opening the test labels. At least two reviewers with M&A experience should independently label the selected features and actionable drafting issues, recording disagreement before adjudication. A test of the prompts should count useful and misleading prompts as well as missed issues. Reviewer agreement and adjudication rules should be reported, because some questions require substantive interpretations of scope rather than string recognition."
+    },
+    {
+      "type": "paragraph",
+      "text": "A reviewer experiment would answer a further question. Reviewer-agreement pairs could be randomized to ordinary review or review with the tool, with order balanced to limit learning from repeated documents. Prespecified outcomes could include lawyer-rated issue detection, elapsed review time and whether a proposed edit unintentionally changes the commercial allocation. Analysis should account for repeated observations from the same reviewer and agreement. No sample-size calculation or such experiment has been completed here. Even a positive result would concern review outcomes. Estimating an effect on litigation would additionally require agreement-to-docket linkage, an appropriate population of signed deals, exposure periods, censoring rules and a defensible method for addressing confounding."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "9 Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "On this 31-agreement test set, naive Bayes outperforms the initial rules, while the revised rules obtain the largest decision-level accuracy after using test-error information. The revised system still misses every positive buyer-action label and reproduces all four reference answers for only 10 agreements. Inspection attributes specific misses to grammatical coverage, an incomplete exclusion-boundary rule and the difference between an explicit party name and a broader legal category. Those findings identify concrete work for the next implementation. They do not establish that the drafting prompts improve contracts or reduce disputes. Independent legal annotation and a new frozen evaluation are needed before making either performance or review-utility claims."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Data availability and computational reproducibility"
+    },
+    {
+      "type": "paragraph",
+      "text": "The repository contains the derived MAUD excerpts, original labels, source identifiers, split assignments, source and derived hashes, both rule versions, all predictions and the manuscript source. The runtime and evaluation use the Python standard library. The paper is built separately with ReportLab. Derived metrics use fixed seeds and 12-decimal serialization; reported tables use fewer digits. The source archive hash and reproduction commands are listed in Appendix B. MAUD-derived material retains its attribution and stated CC BY 4.0 terms. No Stanford, ABA or dataset-publisher endorsement is implied."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "AI assistance and review status"
+    },
+    {
+      "type": "paragraph",
+      "text": "Codex assisted with source research, implementation, diagnostic-fragment generation, data auditing and manuscript drafting. The numerical results were computed by the included scripts. A statistical classifier, rather than an LLM, generated the comparator predictions. The diagnostic expectations have not been independently adjudicated. No independent lawyer review, human-participant experiment or external validation is represented as completed."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "References"
+    },
+    {
+      "type": "reference",
+      "id": "1",
+      "text": "Wang, S., Scardigli, A., Tang, L., Chen, W., Levkin, D., Chen, A., Ball, S., Woodside, T., Zhang, O., and Hendrycks, D. (2023). MAUD: An Expert-Annotated Legal NLP Dataset for Merger Agreement Understanding. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, 16369-16382. doi:10.18653/v1/2023.emnlp-main.1019.",
+      "url": "https://aclanthology.org/2023.emnlp-main.1019/"
+    },
+    {
+      "type": "reference",
+      "id": "2",
+      "text": "Akorn, Inc. v. Fresenius Kabi AG, 2018 WL 4719347 (Del. Ch. Oct. 1, 2018). See slip opinion pp. 124-126 for the definition and closing condition.",
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=279250"
+    },
+    {
+      "type": "reference",
+      "id": "3",
+      "text": "Bardy Diagnostics, Inc. v. Hill-Rom, Inc., 2021 WL 2886188 (Del. Ch. July 9, 2021). See slip opinion pp. 90-96 for the comparator analysis.",
+      "url": "https://law.justia.com/cases/delaware/court-of-chancery/2021/c-a-no-2021-0175-jrs.html"
+    },
+    {
+      "type": "reference",
+      "id": "4",
+      "text": "AB Stable VIII LLC v. MAPS Hotels & Resorts One LLC, 268 A.3d 198 (Del. 2021). See slip opinion pp. 34-38 for the MAE provision and ordinary-course covenant.",
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=327380"
+    },
+    {
+      "type": "reference",
+      "id": "5",
+      "text": "Snow Phipps Group, LLC v. KCAKE Acquisition, Inc., 2021 WL 1714202, at *35 (Del. Ch. Apr. 30, 2021); slip opinion pp. 77-79.",
+      "url": "https://law.justia.com/cases/delaware/court-of-chancery/2021/c-a-no-2020-0282-ksjm.html"
+    },
+    {
+      "type": "reference",
+      "id": "6",
+      "text": "The Atticus Project. MAUD v1 dataset. Accessed November 2, 2026.",
+      "url": "https://www.atticusprojectai.org/maud/"
+    },
+    {
+      "type": "reference",
+      "id": "7",
+      "text": "The Atticus Project. Legal agreements: MAUD, Creative Commons Attribution 4.0 International. Accessed November 2, 2026.",
+      "url": "https://www.atticusprojectai.org/legal/"
+    },
+    {
+      "type": "reference",
+      "id": "8",
+      "text": "Efron, B. (1979). Bootstrap Methods: Another Look at the Jackknife. The Annals of Statistics, 7(1), 1-26. doi:10.1214/aos/1176344552.",
+      "url": "https://doi.org/10.1214/aos/1176344552"
+    },
+    {
+      "type": "reference",
+      "id": "9",
+      "text": "Wilson, E. B. (1927). Probable Inference, the Law of Succession, and Statistical Inference. Journal of the American Statistical Association, 22(158), 209-212. doi:10.1080/01621459.1927.10502953.",
+      "url": "https://doi.org/10.1080/01621459.1927.10502953"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Appendix A Task definitions and development choices"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following are the exact source question strings. The project identifiers name tasks in the prediction files. A positive label refers to the source annotation, not to a defect or dispute. Source identifiers are retained with the contract ID and upstream split; the source id is a question identifier and is not a globally unique row number."
+    },
+    {
+      "type": "table",
+      "name": "questions",
+      "caption": "Table A1. Source questions and project identifiers.",
+      "note": ""
+    },
+    {
+      "type": "paragraph",
+      "text": "Training contains 9,676 distinct features: 1,430 unigrams and 8,246 bigrams. The vocabulary is the same for each question because every classifier receives the same 91 training texts. The question-specific labels change the estimated conditional counts. Table A2 supplies the development scores used to select smoothing; the test labels do not enter that selection."
+    },
+    {
+      "type": "table",
+      "name": "tuning",
+      "caption": "Table A2. Development macro F1 by additive smoothing value.",
+      "note": "Selected values are marked with an asterisk. Values are rounded for display; selection uses the unrounded score. No additional hyperparameter search was performed."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Appendix B Reproduction and source identification"
+    },
+    {
+      "type": "paragraph",
+      "text": "From the repository root, the first command verifies the source subset and API behavior through the test suite. The next two reproduce current and archived initial results. The final commands regenerate manuscript statistics and the paper. PDF creation requires ReportLab 4.4.9; analyzer use and numerical evaluation do not."
+    },
+    {
+      "type": "code",
+      "text": "python -m unittest discover -s tests -v\npython scripts/evaluate.py\npython scripts/evaluate_initial.py\npython scripts/paper_statistics.py --output paper/descriptive_results.json\npython scripts/build_paper.py"
+    },
+    {
+      "type": "paragraph",
+      "text": "To reconstruct the subset from the original release, run python scripts/prepare_data.py --download. The downloader refuses a source archive with a different hash. Original full contracts are placed in ignored local raw storage; the evaluated excerpts and labels are included in the repository. The initial result archive records a CRLF serialization hash; its reproduction script reconstructs that representation from the current LF records and checks the original hash."
+    },
+    {
+      "type": "code",
+      "text": "Source archive SHA-256\n75af5a33d038e9254864f043da38072490ffe11e8488d58d0a2dd39c8f554519\n\nDerived JSONL SHA-256\nebb362e757548a14725328dbede4afb1cdaaf5682b4a74354ce228e4196f13ca"
+    },
+    {
+      "type": "paragraph",
+      "text": "The manuscript statistics script recomputes text lengths, class counts, paired version transitions, complete-profile counts and source-slice checks without fitting a new classifier or changing labels. Each inspected example includes its excerpt hash and offsets. The classifier outputs used in this manuscript are unchanged from the recorded experiment; expanding the paper did not create a new test set."
+    }
+  ]
+}

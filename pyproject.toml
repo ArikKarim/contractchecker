@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contractchecker-research"
+version = "0.1.1"
+description = "Reproducible merger agreement MAE clause research prototype"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+contractchecker = "contractchecker.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["contractchecker*"]
+
+[tool.setuptools.package-data]
+contractchecker = ["web/*.html"]

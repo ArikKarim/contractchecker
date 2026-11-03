@@ -1,0 +1,492 @@
+[
+  {
+    "contract_id": "contract_8",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_14",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_18",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_26",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 0,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_26",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_29",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_29",
+    "evidence": {
+      "end": 3342,
+      "quote": "action taken or omitted to be taken by the Company or any of its Subsidiaries at the written request of Parent",
+      "start": 3232
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_30",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "forward_looking"
+  },
+  {
+    "contract_id": "contract_30",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_32",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_41",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_44",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "forward_looking"
+  },
+  {
+    "contract_id": "contract_44",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_69",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_72",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_72",
+    "evidence": {
+      "end": 3382,
+      "quote": "omission of any action) required or specifically contemplated by this Agreement or requested in writing by Parent",
+      "start": 3269
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_75",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_75",
+    "evidence": null,
+    "gold": 1,
+    "majority": 0,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_87",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_88",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "forward_looking"
+  },
+  {
+    "contract_id": "contract_88",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 0,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_88",
+    "evidence": {
+      "end": 3288,
+      "quote": "action at the written request of or with the prior written consent of Parent",
+      "start": 3212
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_90",
+    "evidence": {
+      "end": 2532,
+      "quote": "action taken or omitted to be taken at the written request of Parent",
+      "start": 2464
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_94",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_94",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_94",
+    "evidence": null,
+    "gold": 1,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 0,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_96",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_96",
+    "evidence": {
+      "end": 1415,
+      "quote": "action at the written request of Parent",
+      "start": 1376
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_100",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_100",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_101",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_101",
+    "evidence": {
+      "end": 1665,
+      "quote": "action taken or omitted to be taken by the Company at the request of or with the written consent of Parent",
+      "start": 1559
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_106",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_121",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_121",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_125",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "forward_looking"
+  },
+  {
+    "contract_id": "contract_125",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  },
+  {
+    "contract_id": "contract_125",
+    "evidence": {
+      "end": 2006,
+      "quote": "action taken (or omitted to be taken) at the prior written request of Parent",
+      "start": 1930
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_126",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_126",
+    "evidence": {
+      "end": 3417,
+      "quote": "action or failure to take any action which action or failure to act is requested in writing by Parent",
+      "start": 3316
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_141",
+    "evidence": {
+      "end": 486,
+      "quote": "would reasonably be expected",
+      "start": 458
+    },
+    "gold": 0,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 1,
+    "split": "test",
+    "task": "forward_looking"
+  },
+  {
+    "contract_id": "contract_141",
+    "evidence": {
+      "end": 1872,
+      "quote": "action required by, this Agreement or consented to in writing by Parent",
+      "start": 1801
+    },
+    "gold": 0,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 1,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_146",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "shareholder_litigation"
+  },
+  {
+    "contract_id": "contract_146",
+    "evidence": null,
+    "gold": 1,
+    "majority": 0,
+    "naive_bayes": 0,
+    "rules": 0,
+    "split": "test",
+    "task": "buyer_actions"
+  },
+  {
+    "contract_id": "contract_150",
+    "evidence": null,
+    "gold": 1,
+    "majority": 1,
+    "naive_bayes": 1,
+    "rules": 0,
+    "split": "test",
+    "task": "consummation"
+  }
+]

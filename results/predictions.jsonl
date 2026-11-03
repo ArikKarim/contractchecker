@@ -1,0 +1,608 @@
+{"contract_id": "contract_0", "evidence": {"end": 479, "quote": "would reasonably be expected", "start": 451}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_0", "evidence": {"end": 3763, "quote": "ability to consummate", "start": 3742}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_0", "evidence": {"end": 3340, "quote": "Stockholder Litigation", "start": 3318}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_0", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_1", "evidence": {"end": 140, "quote": "would reasonably be expected", "start": 112}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_1", "evidence": {"end": 426, "quote": "ability of the Company to consummate", "start": 390}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_1", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_1", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_2", "evidence": {"end": 128, "quote": "would reasonably be expected", "start": 100}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_2", "evidence": {"end": 360, "quote": "prevent the Company from consummating", "start": 323}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_2", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_2", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_3", "evidence": {"end": 269, "quote": "would reasonably be expected", "start": 241}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_3", "evidence": {"end": 515, "quote": "ability of the Company to consummate", "start": 479}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_3", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_3", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_4", "evidence": {"end": 119, "quote": "would reasonably be expected", "start": 91}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_4", "evidence": {"end": 374, "quote": "prevent or materially delay the Company from consummating", "start": 317}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_4", "evidence": {"end": 2961, "quote": "Stockholder Litigation or any demand or Proceeding", "start": 2911}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_4", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_5", "evidence": {"end": 587, "quote": "would reasonably be expected", "start": 559}, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_5", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_5", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_5", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_6", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_6", "evidence": {"end": 293, "quote": "ability of the Person to consummate", "start": 258}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_6", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_6", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_7", "evidence": {"end": 235, "quote": "would reasonable be expected", "start": 207}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_7", "evidence": {"end": 486, "quote": "prevent or materially delay the consummation", "start": 442}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_7", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_7", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_8", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_8", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_8", "evidence": {"end": 4218, "quote": "Proceedings made or brought by any of the current or former stockholders", "start": 4146}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_8", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_9", "evidence": {"end": 150, "quote": "would reasonably be expected", "start": 122}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_9", "evidence": {"end": 506, "quote": "impairs, materially delays or prevents, or would reasonably be expected to materially impair, materially delay or prevent, the Company from consummating", "start": 354}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_9", "evidence": {"end": 3003, "quote": "proceedings made or brought by any of the current or former stockholders of the Company (on their own behalf or on behalf of the Company), but in any event only in their capacities as current or former stockholders", "start": 2789}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_9", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_10", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_10", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_10", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_10", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_11", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_11", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_11", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_11", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_12", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_12", "evidence": {"end": 695, "quote": "prevent, materially delay, or materially impair the ability of the Company to consummate", "start": 607}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_12", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_12", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_13", "evidence": {"end": 263, "quote": "would reasonably be expected", "start": 235}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_13", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_13", "evidence": {"end": 2753, "quote": "stockholder class action litigation, derivative or similar litigation or claims or proceedings", "start": 2659}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_13", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_14", "evidence": {"end": 293, "quote": "would reasonably be expected", "start": 265}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_14", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_14", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_14", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_15", "evidence": {"end": 360, "quote": "would reasonably be expected", "start": 332}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_15", "evidence": {"end": 2910, "quote": "prevents or materially impairs the ability of such Party to timely consummate", "start": 2833}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_15", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_15", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_16", "evidence": {"end": 201, "quote": "would reasonably be expected", "start": 173}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_16", "evidence": {"end": 289, "quote": "delay or impediment to the ability of the Company to consummate", "start": 226}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_16", "evidence": {"end": 4196, "quote": "stockholder litigation arising from or relating to this Agreement or the Merger, including any action", "start": 4095}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_16", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_17", "evidence": {"end": 583, "quote": "would reasonably be expected", "start": 555}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_17", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_17", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_17", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_18", "evidence": {"end": 280, "quote": "would reasonably be expected", "start": 252}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_18", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_18", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_18", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_19", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_19", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_19", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_19", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_20", "evidence": {"end": 241, "quote": "would reasonably be expected", "start": 213}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_20", "evidence": {"end": 494, "quote": "prevent the ability of such Person and its Subsidiaries to consummate", "start": 425}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_20", "evidence": {"end": 4286, "quote": "Proceedings made or brought by any of the current or former stockholders", "start": 4214}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_20", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_21", "evidence": {"end": 299, "quote": "would reasonably be likely", "start": 273}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_21", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_21", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_21", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_22", "evidence": {"end": 275, "quote": "would reasonably be expected", "start": 247}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_22", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_22", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_22", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_23", "evidence": {"end": 212, "quote": "would reasonably be expected", "start": 184}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_23", "evidence": {"end": 453, "quote": "impairs the ability of such Party to consummate", "start": 406}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_23", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_23", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_24", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_24", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_24", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_24", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_25", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_25", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_25", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_25", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_26", "evidence": {"end": 249, "quote": "would reasonably be expected", "start": 221}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_26", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_26", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_26", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_27", "evidence": {"end": 244, "quote": "would reasonably be expected", "start": 216}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_27", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_27", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_27", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_28", "evidence": {"end": 169, "quote": "would reasonably be expected", "start": 141}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_28", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_28", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_28", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_29", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_29", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_29", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_29", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_30", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_30", "evidence": {"end": 596, "quote": "impair the ability of either United or CBTC to perform its respective obligations under this Agreement or otherwise materially threaten or materially impede the consummation", "start": 423}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_30", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_30", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_31", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_31", "evidence": {"end": 263, "quote": "prevent, materially delay or materially impair the ability of such Party or its Subsidiaries to consummate", "start": 157}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_31", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_31", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_32", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_32", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_32", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_32", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_33", "evidence": {"end": 320, "quote": "could reasonably be expected", "start": 292}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_33", "evidence": {"end": 271, "quote": "prevents, materially delays or materially impairs the ability of such Party or its Subsidiaries to consummate", "start": 162}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_33", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_33", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_34", "evidence": {"end": 144, "quote": "would reasonably be expected", "start": 116}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_34", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_34", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_34", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_35", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_35", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_35", "evidence": {"end": 3003, "quote": "Stockholder Litigation", "start": 2981}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_35", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_36", "evidence": {"end": 217, "quote": "would reasonably be expected", "start": 189}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_36", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_36", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_36", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_37", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_37", "evidence": {"end": 467, "quote": "delay or materially impair the ability of the Company and the Company Operating Partnership to perform its obligations under this Agreement or to consummate", "start": 311}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_37", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_37", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_38", "evidence": {"end": 571, "quote": "would reasonably be expected", "start": 543}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_38", "evidence": {"end": 829, "quote": "prevent the consummation", "start": 805}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_38", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_38", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_39", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_39", "evidence": {"end": 516, "quote": "impairs the ability of such party to perform its obligations under this Agreement or to consummate", "start": 418}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_39", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_39", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_40", "evidence": {"end": 198, "quote": "would reasonably be expected", "start": 170}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_40", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_40", "evidence": {"end": 4736, "quote": "Proceeding brought or threatened by stockholders", "start": 4688}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_40", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_41", "evidence": {"end": 265, "quote": "would reasonably be expected", "start": 237}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_41", "evidence": {"end": 552, "quote": "prevent the ability of the Company to consummate", "start": 504}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_41", "evidence": {"end": 3746, "quote": "Proceeding made or brought by any current or former stockholders of the Company (or on their behalf or on behalf of the Company, but in any event only in their capacities as current or former stockholders", "start": 3542}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_41", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_42", "evidence": {"end": 792, "quote": "would reasonably be expected", "start": 764}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_42", "evidence": {"end": 1038, "quote": "prevent or materially delay the Company from consummating", "start": 981}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_42", "evidence": {"end": 3835, "quote": "Stockholder Litigation", "start": 3813}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_42", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_43", "evidence": {"end": 196, "quote": "would reasonably be expected", "start": 168}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_43", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_43", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_43", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_44", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_44", "evidence": {"end": 563, "quote": "impede the consummation", "start": 540}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_44", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_44", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_45", "evidence": {"end": 190, "quote": "would reasonably be expected", "start": 162}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_45", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_45", "evidence": {"end": 3344, "quote": "Proceeding brought or threatened by stockholders", "start": 3296}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_45", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_46", "evidence": {"end": 186, "quote": "would reasonably be expected", "start": 158}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_46", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_46", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_46", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_47", "evidence": {"end": 275, "quote": "would be reasonably likely", "start": 249}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_47", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_47", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_47", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_48", "evidence": {"end": 327, "quote": "would reasonably be expected", "start": 299}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_48", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_48", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_48", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_49", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_49", "evidence": {"end": 309, "quote": "prevent the consummation", "start": 285}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_49", "evidence": {"end": 4953, "quote": "proceedings made or brought by any of the current or former stockholders", "start": 4881}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_49", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_50", "evidence": {"end": 213, "quote": "would reasonably be expected", "start": 185}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_50", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_50", "evidence": {"end": 4042, "quote": "litigation by the stockholders", "start": 4012}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_50", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_51", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_51", "evidence": {"end": 252, "quote": "prevent, materially delay or materially impair the ability of such Party or its Subsidiaries to consummate", "start": 146}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_51", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_51", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_52", "evidence": {"end": 173, "quote": "would be reasonably expected", "start": 145}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_52", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_52", "evidence": {"end": 2329, "quote": "litigation brought by a stockholder", "start": 2294}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_52", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_53", "evidence": {"end": 455, "quote": "would reasonably be expected", "start": 427}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_53", "evidence": {"end": 280, "quote": "prevents or materially impairs the ability of the parties hereto to consummate", "start": 202}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_53", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_53", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_54", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_54", "evidence": {"end": 432, "quote": "impair the ability of such Person to perform its obligations under this Agreement or otherwise materially impairs the ability of such Person to consummate", "start": 278}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_54", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_54", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_55", "evidence": {"end": 124, "quote": "would reasonably be expected", "start": 96}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_55", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_55", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_55", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_56", "evidence": {"end": 273, "quote": "would reasonably be expected", "start": 245}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_56", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_56", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_56", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_57", "evidence": {"end": 124, "quote": "would reasonably be expected", "start": 96}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_57", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_57", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_57", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_58", "evidence": {"end": 130, "quote": "would reasonably be expected", "start": 102}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_58", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_58", "evidence": {"end": 3615, "quote": "litigation by any stockholder", "start": 3586}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_58", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_59", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_59", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_59", "evidence": {"end": 3404, "quote": "litigation by any stockholder", "start": 3375}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_59", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_60", "evidence": {"end": 239, "quote": "would reasonably be expected", "start": 211}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_60", "evidence": {"end": 343, "quote": "prevent or materially impair or delay the ability of the Company and its Subsidiaries, to consummate", "start": 243}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_60", "evidence": {"end": 2903, "quote": "litigation brought by stockholders", "start": 2869}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_60", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_61", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_61", "evidence": {"end": 320, "quote": "prevent or materially delay the consummation", "start": 276}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_61", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_61", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_62", "evidence": {"end": 204, "quote": "would be reasonably expected", "start": 176}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_62", "evidence": {"end": 426, "quote": "ability of the Company to consummate", "start": 390}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_62", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_62", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_63", "evidence": {"end": 349, "quote": "would reasonably be expected", "start": 321}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_63", "evidence": {"end": 686, "quote": "prevent, materially delay, or materially impair the ability of the Company to consummate", "start": 598}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_63", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_63", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_64", "evidence": {"end": 148, "quote": "would reasonably be expected", "start": 120}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_64", "evidence": {"end": 366, "quote": "prevent or materially delay the consummation", "start": 322}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_64", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_64", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_65", "evidence": {"end": 186, "quote": "would reasonably be expected", "start": 158}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_65", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_65", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_65", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_66", "evidence": {"end": 233, "quote": "would reasonably be expected", "start": 205}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_66", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_66", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_66", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_67", "evidence": {"end": 188, "quote": "would reasonably be expected", "start": 160}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_67", "evidence": {"end": 262, "quote": "prevent or materially impair the ability of the Company to consummate", "start": 193}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_67", "evidence": {"end": 2029, "quote": "litigation by any stockholder", "start": 2000}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_67", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_68", "evidence": {"end": 313, "quote": "would reasonably be expected", "start": 285}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_68", "evidence": {"end": 252, "quote": "prevent, materially delay or materially impair the ability of such Party or its Subsidiaries to consummate", "start": 146}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_68", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_68", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_69", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_69", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_69", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_69", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_70", "evidence": {"end": 186, "quote": "would reasonably be expected", "start": 158}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_70", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_70", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_70", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_71", "evidence": {"end": 171, "quote": "would reasonably be expected", "start": 143}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_71", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_71", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_71", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_72", "evidence": {"end": 212, "quote": "would reasonably be expected", "start": 184}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_72", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_72", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_72", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_73", "evidence": {"end": 272, "quote": "would reasonably be expected", "start": 244}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_73", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_73", "evidence": {"end": 5423, "quote": "stockholder class action or derivative litigation", "start": 5374}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_73", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_74", "evidence": {"end": 197, "quote": "would be reasonably expected", "start": 169}, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_74", "evidence": {"end": 487, "quote": "prevents or materially impedes or delays, or is reasonably likely to prevent or materially impede or delay, the consummation", "start": 363}, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_74", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_74", "evidence": {"end": 4739, "quote": "action taken by Parent", "start": 4717}, "gold": 1, "majority": 0, "naive_bayes": 0, "rules": 1, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_75", "evidence": {"end": 188, "quote": "would be reasonably likely", "start": 162}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_75", "evidence": {"end": 426, "quote": "ability of the Company to consummate", "start": 390}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_75", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_75", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_76", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_76", "evidence": {"end": 337, "quote": "prevent, materially delay or materially impair the ability of the Company to consummate", "start": 250}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_76", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_76", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_77", "evidence": {"end": 272, "quote": "would reasonably be likely", "start": 246}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_77", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_77", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_77", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_78", "evidence": {"end": 236, "quote": "would reasonably be expected", "start": 208}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_78", "evidence": {"end": 472, "quote": "ability of the Company to consummate", "start": 436}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_78", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_78", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_79", "evidence": {"end": 199, "quote": "would reasonably be expected", "start": 171}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_79", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_79", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_79", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_80", "evidence": {"end": 199, "quote": "would reasonably be expected", "start": 171}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_80", "evidence": {"end": 269, "quote": "prevent or materially impair or materially delay the consummation", "start": 204}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_80", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_80", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_81", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_81", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_81", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_81", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_82", "evidence": {"end": 188, "quote": "would be reasonably likely", "start": 162}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_82", "evidence": {"end": 426, "quote": "ability of the Company to consummate", "start": 390}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_82", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_82", "evidence": {"end": 2240, "quote": "actions taken by Parent", "start": 2217}, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 1, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_83", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_83", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_83", "evidence": {"end": 1750, "quote": "stockholder or derivative litigation", "start": 1714}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_83", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_84", "evidence": {"end": 333, "quote": "would reasonably be expected", "start": 305}, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_84", "evidence": {"end": 627, "quote": "prevents or materially impairs the ability of such Person and its Subsidiaries to consummate", "start": 535}, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_84", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_84", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_85", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_85", "evidence": {"end": 232, "quote": "prevents, or has a material adverse effect on, the ability of the Company to consummate", "start": 145}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_85", "evidence": {"end": 1903, "quote": "stockholder litigation", "start": 1881}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_85", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_86", "evidence": {"end": 187, "quote": "would reasonably be expected", "start": 159}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_86", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_86", "evidence": {"end": 3394, "quote": "claims made or brought by any of the current or former shareholders of the Company (or on their behalf or on behalf of the Company, but in any event only in their capacities as current or former shareholders", "start": 3187}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_86", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_87", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_87", "evidence": {"end": 511, "quote": "impairs the ability of such party to perform its obligations under this Agreement or to consummate", "start": 413}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_87", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_87", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_88", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_88", "evidence": {"end": 204, "quote": "prevent the ability of the Company Entities, taken as a whole, to consummate", "start": 128}, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_88", "evidence": {"end": 4128, "quote": "Stockholder Litigation", "start": 4106}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_88", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_89", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_89", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_89", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_89", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_90", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_90", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_90", "evidence": {"end": 2692, "quote": "lawsuit commenced by a stockholder of the Company (in his, her or its capacity as a stockholder", "start": 2597}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_90", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_91", "evidence": {"end": 349, "quote": "would reasonably be expected", "start": 321}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_91", "evidence": {"end": 537, "quote": "prevent the consummation", "start": 513}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_91", "evidence": {"end": 8255, "quote": "Litigation or other Legal Proceeding threatened, made or brought by any of the current or former Company Stockholders", "start": 8138}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_91", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_92", "evidence": {"end": 214, "quote": "would reasonably be expected", "start": 186}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_92", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_92", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_92", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_93", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_93", "evidence": {"end": 456, "quote": "impair the ability of such Person to perform its obligations under this Agreement or otherwise materially impairs the ability of such Person to timely consummate", "start": 295}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_93", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_93", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_94", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_94", "evidence": {"end": 534, "quote": "prevents, materially impairs, materially impedes or materially delays the consummation", "start": 448}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_94", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_94", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_95", "evidence": {"end": 126, "quote": "would reasonably be expected", "start": 98}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_95", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_95", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_95", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_96", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_96", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_96", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_96", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_97", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_97", "evidence": {"end": 411, "quote": "prevents, materially impedes or materially delays the consummation", "start": 345}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_97", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_97", "evidence": {"end": 2487, "quote": "actions taken by Parent", "start": 2464}, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 1, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_98", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_98", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_98", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_98", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_99", "evidence": {"end": 271, "quote": "would reasonably be expected", "start": 243}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_99", "evidence": {"end": 620, "quote": "prevent the Company from consummating, or to materially impair or materially delay the ability of the Company to consummate", "start": 497}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_99", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_99", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_100", "evidence": {"end": 349, "quote": "would reasonably be expected", "start": 321}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_100", "evidence": {"end": 658, "quote": "prevent, materially delay or materially impair the ability of the Company to consummate", "start": 571}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_100", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_100", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_101", "evidence": {"end": 149, "quote": "would reasonably be expected", "start": 121}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_101", "evidence": {"end": 468, "quote": "impairs or prevents, or would reasonably be expected to materially impair or prevent, the Company from consummating", "start": 353}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_101", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_101", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_102", "evidence": {"end": 201, "quote": "would reasonably be expected", "start": 173}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_102", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_102", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_102", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_103", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_103", "evidence": {"end": 304, "quote": "prevent or materially impair or materially delay the consummation", "start": 239}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_103", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_103", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_104", "evidence": {"end": 137, "quote": "would reasonably be expected", "start": 109}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_104", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_104", "evidence": {"end": 2512, "quote": "Proceeding brought by any Company stockholder", "start": 2467}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_104", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_105", "evidence": {"end": 213, "quote": "would reasonably be expected", "start": 185}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_105", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_105", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_105", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_106", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_106", "evidence": {"end": 370, "quote": "impairs the ability of the Company to consummate", "start": 322}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_106", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_106", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_107", "evidence": {"end": 288, "quote": "would reasonably be expected", "start": 260}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_107", "evidence": {"end": 587, "quote": "ability of the Company to consummate", "start": 551}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_107", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_107", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_108", "evidence": {"end": 323, "quote": "would reasonably be expected", "start": 295}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_108", "evidence": {"end": 414, "quote": "prevent, materially delay or materially impair the ability of such Person to consummate", "start": 327}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_108", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_108", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_109", "evidence": {"end": 278, "quote": "would reasonably be expected", "start": 250}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_109", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_109", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_109", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_110", "evidence": {"end": 169, "quote": "would reasonably be expected", "start": 141}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_110", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_110", "evidence": {"end": 3267, "quote": "litigation or other Proceeding brought by any stockholder", "start": 3210}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_110", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_111", "evidence": {"end": 337, "quote": "would reasonably be expected", "start": 309}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_111", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_111", "evidence": {"end": 4615, "quote": "Litigation or other Legal Proceeding threatened, made or brought by any of the current or former Company Stockholders", "start": 4498}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_111", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_112", "evidence": {"end": 274, "quote": "would reasonably be likely", "start": 248}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_112", "evidence": {"end": 867, "quote": "impair the ability of either Peoples or Premier Financial to perform its \n\n4\n\n\nobligations under this Agreement or otherwise materially threaten or materially impede the consummation", "start": 685}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_112", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_112", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_113", "evidence": {"end": 145, "quote": "would reasonably be expected", "start": 117}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_113", "evidence": {"end": 402, "quote": "prevents the ability of the Company to consummate", "start": 353}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_113", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_113", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_114", "evidence": {"end": 340, "quote": "would reasonably be expected", "start": 312}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_114", "evidence": {"end": 583, "quote": "prevent, materially impair or materially delay the consummation", "start": 520}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_114", "evidence": {"end": 3297, "quote": "Stockholder Litigation", "start": 3275}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_114", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_115", "evidence": {"end": 180, "quote": "reasonably likely", "start": 163}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_115", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_115", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_115", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_116", "evidence": {"end": 169, "quote": "would reasonably be expected", "start": 141}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_116", "evidence": {"end": 444, "quote": "prevent, materially impair or delay beyond the Outside Date the consummation", "start": 368}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_116", "evidence": {"end": 3362, "quote": "stockholder litigation (or a derivative or similar claim) or other Proceeding brought in connection with this Agreement or any of the Transactions, including breach of fiduciary duty or inadequate disclosure claims", "start": 3148}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_116", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_117", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_117", "evidence": {"end": 263, "quote": "prevent, materially delay or materially impair the ability of such Party or its Subsidiaries to consummate", "start": 157}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_117", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_117", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_118", "evidence": {"end": 133, "quote": "would reasonably be expected", "start": 105}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_118", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_118", "evidence": {"end": 4094, "quote": "claims made or brought by any of the current or former shareholders", "start": 4027}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_118", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_119", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_119", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_119", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_119", "evidence": {"end": 1518, "quote": "actions taken by Parent", "start": 1495}, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 1, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_120", "evidence": {"end": 141, "quote": "would reasonably be expected", "start": 113}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_120", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_120", "evidence": {"end": 5926, "quote": "Litigation or other Legal Proceeding threatened, made or brought by any of the current or former Company Stockholders", "start": 5809}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_120", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_121", "evidence": {"end": 226, "quote": "would reasonably be expected", "start": 198}, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_121", "evidence": {"end": 498, "quote": "prevent or materially impair or delay the ability of Company to consummate", "start": 424}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_121", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_121", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_122", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_122", "evidence": {"end": 511, "quote": "prevents, materially impairs, materially impedes or materially delays the consummation", "start": 425}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_122", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_122", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_123", "evidence": {"end": 269, "quote": "would reasonably be expected", "start": 241}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_123", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_123", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_123", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_124", "evidence": {"end": 2138, "quote": "would reasonably be expected", "start": 2110}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_124", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_124", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_124", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_125", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_125", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_125", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_125", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_126", "evidence": {"end": 130, "quote": "would reasonably be expected", "start": 102}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_126", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_126", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_126", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_127", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_127", "evidence": {"end": 320, "quote": "prevent or materially impede, interfere with, hinder or delay the consummation", "start": 242}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_127", "evidence": {"end": 3000, "quote": "stockholder (direct or derivative) Action", "start": 2959}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_127", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_128", "evidence": {"end": 348, "quote": "would reasonably be expected", "start": 320}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_128", "evidence": {"end": 415, "quote": "prevent, materially impair or materially delay the consummation", "start": 352}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_128", "evidence": {"end": 3193, "quote": "Proceedings made or brought by any of the current or former stockholders", "start": 3121}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_128", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_129", "evidence": {"end": 281, "quote": "would reasonably be expected", "start": 253}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_129", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_129", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_129", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_130", "evidence": {"end": 221, "quote": "would reasonably be expected", "start": 193}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_130", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_130", "evidence": {"end": 2251, "quote": "claims made or brought by any of the current or former shareholders", "start": 2184}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_130", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_131", "evidence": {"end": 277, "quote": "would reasonably be likely", "start": 251}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_131", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_131", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_131", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_132", "evidence": {"end": 149, "quote": "would be reasonably expected", "start": 121}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_132", "evidence": {"end": 530, "quote": "prevent, materially delay or materially impair the ability of the Company to consummate", "start": 443}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_132", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_132", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_133", "evidence": {"end": 131, "quote": "would be reasonably expected", "start": 103}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_133", "evidence": {"end": 4652, "quote": "ability of the Company to consummate", "start": 4616}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_133", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_133", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_134", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_134", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_134", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_134", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_135", "evidence": {"end": 364, "quote": "would be reasonably expected", "start": 336}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_135", "evidence": {"end": 220, "quote": "prevents or materially impairs or delays the consummation", "start": 163}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_135", "evidence": {"end": 2920, "quote": "litigation brought by a stockholder", "start": 2885}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_135", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_136", "evidence": {"end": 643, "quote": "would reasonably likely", "start": 620}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_136", "evidence": {"end": 318, "quote": "prevent or materially delay the consummation", "start": 274}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_136", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_136", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_137", "evidence": {"end": 290, "quote": "would reasonably be expected", "start": 262}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_137", "evidence": {"end": 582, "quote": "prevent or materially impair the ability of TRMT to consummate", "start": 520}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_137", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_137", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_138", "evidence": {"end": 159, "quote": "would reasonably be expected", "start": 131}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_138", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_138", "evidence": {"end": 1653, "quote": "stockholder or derivative litigation", "start": 1617}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_138", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_139", "evidence": {"end": 130, "quote": "would reasonably be expected", "start": 102}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_139", "evidence": {"end": 362, "quote": "ability of the Company to consummate", "start": 326}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_139", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_139", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_140", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_140", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_140", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_140", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_141", "evidence": {"end": 486, "quote": "would reasonably be expected", "start": 458}, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_141", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_141", "evidence": {"end": 2899, "quote": "stockholder litigation", "start": 2877}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_141", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_142", "evidence": {"end": 222, "quote": "reasonably likely", "start": 205}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_142", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_142", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_142", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_143", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_143", "evidence": {"end": 263, "quote": "prevent, materially delay or materially impair the ability of such Party or its Subsidiaries to consummate", "start": 157}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_143", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_143", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_144", "evidence": {"end": 191, "quote": "could reasonably be expected", "start": 163}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_144", "evidence": {"end": 4706, "quote": "prevents the ability of the Company to consummate", "start": 4657}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_144", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_144", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_145", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_145", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "consummation"}
+{"contract_id": "contract_145", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_145", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 1, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_146", "evidence": {"end": 176, "quote": "would reasonably be expected", "start": 148}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_146", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "consummation"}
+{"contract_id": "contract_146", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_146", "evidence": null, "gold": 1, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_147", "evidence": {"end": 163, "quote": "would reasonably be expected", "start": 135}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_147", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_147", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_147", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_148", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_148", "evidence": {"end": 324, "quote": "prevents or materially impairs or delays the ability of such Party to consummate", "start": 244}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_148", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_148", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
+{"contract_id": "contract_149", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "forward_looking"}
+{"contract_id": "contract_149", "evidence": {"end": 202, "quote": "prevent or materially impair the ability of the Company to consummate", "start": 133}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "dev", "task": "consummation"}
+{"contract_id": "contract_149", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "dev", "task": "shareholder_litigation"}
+{"contract_id": "contract_149", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "dev", "task": "buyer_actions"}
+{"contract_id": "contract_150", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "forward_looking"}
+{"contract_id": "contract_150", "evidence": {"end": 526, "quote": "prevents, materially impairs, materially impedes or materially delays the consummation", "start": 440}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "test", "task": "consummation"}
+{"contract_id": "contract_150", "evidence": null, "gold": 0, "majority": 1, "naive_bayes": 0, "rules": 0, "split": "test", "task": "shareholder_litigation"}
+{"contract_id": "contract_150", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "test", "task": "buyer_actions"}
+{"contract_id": "contract_151", "evidence": {"end": 355, "quote": "would reasonably be expected", "start": 327}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "forward_looking"}
+{"contract_id": "contract_151", "evidence": {"end": 670, "quote": "prevented, materially impaired or delayed or would reasonably be expected to prevent or materially impair or delay the consummation", "start": 539}, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 1, "split": "train", "task": "consummation"}
+{"contract_id": "contract_151", "evidence": null, "gold": 1, "majority": 1, "naive_bayes": 1, "rules": 0, "split": "train", "task": "shareholder_litigation"}
+{"contract_id": "contract_151", "evidence": null, "gold": 0, "majority": 0, "naive_bayes": 0, "rules": 0, "split": "train", "task": "buyer_actions"}
