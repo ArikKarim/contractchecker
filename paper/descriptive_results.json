@@ -1,0 +1,540 @@
+{
+  "length_unit": "ASCII alphabetic unigram tokens from re.findall('[a-z]+', text.lower()); no stopword removal",
+  "quartiles": "linear interpolation at (n-1)*p",
+  "sample": {
+    "all": {
+      "agreements": 152,
+      "alphabetic_tokens": {
+        "maximum": 1335,
+        "mean": 694.5723684210526,
+        "median": 700.0,
+        "minimum": 342,
+        "q25": 586.25,
+        "q75": 782.5
+      },
+      "characters": {
+        "maximum": 8654,
+        "mean": 4520.723684210527,
+        "median": 4530.5,
+        "minimum": 2186,
+        "q25": 3853.0,
+        "q75": 5060.5
+      },
+      "omission_ids": [
+        "contract_26",
+        "contract_30",
+        "contract_42",
+        "contract_77",
+        "contract_129"
+      ],
+      "positive_labels": {
+        "buyer_actions": 21,
+        "consummation": 105,
+        "forward_looking": 121,
+        "shareholder_litigation": 90
+      }
+    },
+    "dev": {
+      "agreements": 30,
+      "alphabetic_tokens": {
+        "maximum": 898,
+        "mean": 667.7333333333333,
+        "median": 663.0,
+        "minimum": 342,
+        "q25": 621.75,
+        "q75": 742.25
+      },
+      "characters": {
+        "maximum": 5770,
+        "mean": 4339.133333333333,
+        "median": 4353.0,
+        "minimum": 2186,
+        "q25": 3954.75,
+        "q75": 4841.25
+      },
+      "omission_ids": [],
+      "positive_labels": {
+        "buyer_actions": 5,
+        "consummation": 20,
+        "forward_looking": 27,
+        "shareholder_litigation": 17
+      }
+    },
+    "test": {
+      "agreements": 31,
+      "alphabetic_tokens": {
+        "maximum": 1118,
+        "mean": 646.8064516129032,
+        "median": 614,
+        "minimum": 417,
+        "q25": 528.5,
+        "q75": 714.0
+      },
+      "characters": {
+        "maximum": 7545,
+        "mean": 4223.1612903225805,
+        "median": 4007,
+        "minimum": 2763,
+        "q25": 3415.0,
+        "q75": 4755.5
+      },
+      "omission_ids": [
+        "contract_26",
+        "contract_30"
+      ],
+      "positive_labels": {
+        "buyer_actions": 5,
+        "consummation": 17,
+        "forward_looking": 19,
+        "shareholder_litigation": 18
+      }
+    },
+    "train": {
+      "agreements": 91,
+      "alphabetic_tokens": {
+        "maximum": 1335,
+        "mean": 719.6923076923077,
+        "median": 719,
+        "minimum": 342,
+        "q25": 608.0,
+        "q75": 808.0
+      },
+      "characters": {
+        "maximum": 8654,
+        "mean": 4681.956043956044,
+        "median": 4674,
+        "minimum": 2186,
+        "q25": 3948.5,
+        "q75": 5293.5
+      },
+      "omission_ids": [
+        "contract_42",
+        "contract_77",
+        "contract_129"
+      ],
+      "positive_labels": {
+        "buyer_actions": 11,
+        "consummation": 68,
+        "forward_looking": 75,
+        "shareholder_litigation": 55
+      }
+    }
+  },
+  "source_examples": [
+    {
+      "contract_id": "contract_8",
+      "end": 471,
+      "first_exclusion_cutoff": 473,
+      "gold": 1,
+      "initial_prediction": 0,
+      "quote": "the ability of such Person and its Subsidiaries to consummate the Transactions before the End Date",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "94e974f370fdfdda8b0616e88a1112e6045da6c627ad6b70b68e2ce4bd7ccf78",
+      "source_row": {
+        "id": "21",
+        "upstream_split": "train"
+      },
+      "start": 373,
+      "task": "consummation"
+    },
+    {
+      "contract_id": "contract_14",
+      "end": 2751,
+      "first_exclusion_cutoff": 480,
+      "gold": 1,
+      "initial_prediction": 0,
+      "quote": "or (ii) the ability of such party to timely consummate the transactions contemplated hereby",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "6e57fcd4ef02d231119f2cbd351330807f2359622b8aee1dae60bdc633a02a08",
+      "source_row": {
+        "id": "21",
+        "upstream_split": "train"
+      },
+      "start": 2660,
+      "task": "consummation"
+    },
+    {
+      "contract_id": "contract_18",
+      "end": 2945,
+      "first_exclusion_cutoff": 467,
+      "gold": 1,
+      "initial_prediction": 0,
+      "quote": "or (ii) the ability of such party to timely consummate the transactions contemplated hereby",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "925b89be29efdb5f4191a87c07cc02097cda2548d771e86816d8ff71c0298cb6",
+      "source_row": {
+        "id": "21",
+        "upstream_split": "train"
+      },
+      "start": 2854,
+      "task": "consummation"
+    },
+    {
+      "contract_id": "contract_29",
+      "end": 3342,
+      "first_exclusion_cutoff": 226,
+      "gold": 0,
+      "initial_prediction": 1,
+      "quote": "any action taken or omitted to be taken by the Company or any of its Subsidiaries at the written request of Parent",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "9608b0ea485b082158cc6a9816962d7cb55a6cac9b4121a886fae9b4e3a48ae4",
+      "source_row": {
+        "id": "58",
+        "upstream_split": "train"
+      },
+      "start": 3228,
+      "task": "buyer_actions"
+    },
+    {
+      "contract_id": "contract_32",
+      "end": 5877,
+      "first_exclusion_cutoff": 226,
+      "gold": 1,
+      "initial_prediction": 1,
+      "quote": "any action expressly required or permitted to be taken by Parent, Purchaser or the Company",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "93852333bd9eb4869ba134cefec350d4f25264759caaf98982285f17cc482860",
+      "source_row": {
+        "id": "58",
+        "upstream_split": "test"
+      },
+      "start": 5787,
+      "task": "buyer_actions"
+    },
+    {
+      "contract_id": "contract_32",
+      "end": 6178,
+      "first_exclusion_cutoff": 226,
+      "gold": 1,
+      "initial_prediction": 1,
+      "quote": "any breach by Parent or Purchaser of this Agreement",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "93852333bd9eb4869ba134cefec350d4f25264759caaf98982285f17cc482860",
+      "source_row": {
+        "id": "58",
+        "upstream_split": "test"
+      },
+      "start": 6127,
+      "task": "buyer_actions"
+    },
+    {
+      "contract_id": "contract_43",
+      "end": 2857,
+      "first_exclusion_cutoff": 364,
+      "gold": 1,
+      "initial_prediction": 1,
+      "quote": "the identity of, or any facts or circumstances relating to, Parent, Purchaser or any of their respective Affiliates",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "4cf2f9a9d6d6a65bfbf139eaffa90006df2eede0aa48ca1a8fc717284d04d2cf",
+      "source_row": {
+        "id": "58",
+        "upstream_split": "train"
+      },
+      "start": 2742,
+      "task": "buyer_actions"
+    },
+    {
+      "contract_id": "contract_146",
+      "end": 2370,
+      "first_exclusion_cutoff": 4825,
+      "gold": 1,
+      "initial_prediction": 0,
+      "quote": "any action taken by Parent or any Affiliate thereof",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "f35980d943432f78fa02e86be97f820e237236a2eb64d0dd81f82e075e11fd11",
+      "source_row": {
+        "id": "58",
+        "upstream_split": "dev"
+      },
+      "start": 2319,
+      "task": "buyer_actions"
+    },
+    {
+      "contract_id": "contract_146",
+      "end": 2221,
+      "first_exclusion_cutoff": 4825,
+      "gold": 1,
+      "initial_prediction": 0,
+      "quote": "any stockholder litigation related to this Agreement or the transactions contemplated by this Agreement",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "f35980d943432f78fa02e86be97f820e237236a2eb64d0dd81f82e075e11fd11",
+      "source_row": {
+        "id": "55",
+        "upstream_split": "train"
+      },
+      "start": 2118,
+      "task": "shareholder_litigation"
+    },
+    {
+      "contract_id": "contract_96",
+      "end": 1913,
+      "first_exclusion_cutoff": 312,
+      "gold": 1,
+      "initial_prediction": 0,
+      "quote": "any Action initiated or threatened on or after the date hereof by any stockholders of the Company",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "a1c523db5da205c41fe87195f95620203ecca2e5fd144e01faf8399dd3ad8029",
+      "source_row": {
+        "id": "55",
+        "upstream_split": "train"
+      },
+      "start": 1816,
+      "task": "shareholder_litigation"
+    },
+    {
+      "contract_id": "contract_72",
+      "end": 2124,
+      "first_exclusion_cutoff": 451,
+      "gold": 1,
+      "initial_prediction": 0,
+      "quote": "the initiation of litigation by any Person with respect to this Agreement or the Transactions",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "23fd286e7cbbada5736c1ec52d61822dbd83c59be8ef0d228178fea86a229285",
+      "source_row": {
+        "id": "55",
+        "upstream_split": "train"
+      },
+      "start": 2031,
+      "task": "shareholder_litigation"
+    },
+    {
+      "contract_id": "contract_30",
+      "end": 525,
+      "first_exclusion_cutoff": 3464,
+      "gold": 1,
+      "initial_prediction": 0,
+      "quote": "would materially impair the ability of either United or CBTC to perform its respective obligations under this Agreement",
+      "revised_prediction": 0,
+      "source_excerpt_sha256": "2d1252c75b064711a5b9633ca088b491092790ef4f7ffd4b16f2c1a1cd145266",
+      "source_row": {
+        "id": "24",
+        "upstream_split": "train"
+      },
+      "start": 406,
+      "task": "forward_looking"
+    },
+    {
+      "contract_id": "contract_141",
+      "end": 495,
+      "first_exclusion_cutoff": 4251,
+      "gold": 0,
+      "initial_prediction": 1,
+      "quote": "has occurred or would reasonably be expected to occur",
+      "revised_prediction": 1,
+      "source_excerpt_sha256": "9b6f5b3d3570996a6f7028f7d754bf8758d18631e10e098eb5138cb3961674e5",
+      "source_row": {
+        "id": "24",
+        "upstream_split": "test"
+      },
+      "start": 442,
+      "task": "forward_looking"
+    }
+  ],
+  "test_agreement_correct_task_distribution": {
+    "majority": {
+      "1": 3,
+      "2": 12,
+      "3": 11,
+      "4": 5
+    },
+    "naive_bayes": {
+      "1": 2,
+      "2": 7,
+      "3": 12,
+      "4": 10
+    },
+    "rules": {
+      "2": 5,
+      "3": 16,
+      "4": 10
+    }
+  },
+  "training_vocabulary": {
+    "bigrams": 8246,
+    "total": 9676,
+    "unigrams": 1430
+  },
+  "v1_to_v11_test_transitions": {
+    "buyer_actions": {
+      "counts": {
+        "correct_to_correct": 17,
+        "correct_to_error": 2,
+        "error_to_correct": 9,
+        "error_to_error": 3
+      },
+      "ids": {
+        "correct_to_correct": [
+          "contract_8",
+          "contract_14",
+          "contract_18",
+          "contract_25",
+          "contract_26",
+          "contract_30",
+          "contract_41",
+          "contract_44",
+          "contract_45",
+          "contract_52",
+          "contract_69",
+          "contract_71",
+          "contract_87",
+          "contract_100",
+          "contract_106",
+          "contract_121",
+          "contract_150"
+        ],
+        "correct_to_error": [
+          "contract_32",
+          "contract_43"
+        ],
+        "error_to_correct": [
+          "contract_29",
+          "contract_72",
+          "contract_88",
+          "contract_90",
+          "contract_96",
+          "contract_101",
+          "contract_125",
+          "contract_126",
+          "contract_141"
+        ],
+        "error_to_error": [
+          "contract_75",
+          "contract_94",
+          "contract_146"
+        ]
+      }
+    },
+    "consummation": {
+      "counts": {
+        "correct_to_correct": 14,
+        "error_to_correct": 12,
+        "error_to_error": 5
+      },
+      "ids": {
+        "correct_to_correct": [
+          "contract_25",
+          "contract_29",
+          "contract_32",
+          "contract_43",
+          "contract_45",
+          "contract_52",
+          "contract_69",
+          "contract_71",
+          "contract_72",
+          "contract_90",
+          "contract_96",
+          "contract_126",
+          "contract_141",
+          "contract_146"
+        ],
+        "error_to_correct": [
+          "contract_30",
+          "contract_41",
+          "contract_44",
+          "contract_75",
+          "contract_87",
+          "contract_88",
+          "contract_94",
+          "contract_100",
+          "contract_101",
+          "contract_106",
+          "contract_121",
+          "contract_150"
+        ],
+        "error_to_error": [
+          "contract_8",
+          "contract_14",
+          "contract_18",
+          "contract_26",
+          "contract_125"
+        ]
+      }
+    },
+    "forward_looking": {
+      "counts": {
+        "correct_to_correct": 26,
+        "error_to_error": 5
+      },
+      "ids": {
+        "correct_to_correct": [
+          "contract_8",
+          "contract_14",
+          "contract_18",
+          "contract_25",
+          "contract_26",
+          "contract_29",
+          "contract_32",
+          "contract_41",
+          "contract_43",
+          "contract_45",
+          "contract_52",
+          "contract_69",
+          "contract_71",
+          "contract_72",
+          "contract_75",
+          "contract_87",
+          "contract_90",
+          "contract_94",
+          "contract_96",
+          "contract_100",
+          "contract_101",
+          "contract_106",
+          "contract_121",
+          "contract_126",
+          "contract_146",
+          "contract_150"
+        ],
+        "error_to_error": [
+          "contract_30",
+          "contract_44",
+          "contract_88",
+          "contract_125",
+          "contract_141"
+        ]
+      }
+    },
+    "shareholder_litigation": {
+      "counts": {
+        "correct_to_correct": 20,
+        "error_to_error": 11
+      },
+      "ids": {
+        "correct_to_correct": [
+          "contract_8",
+          "contract_14",
+          "contract_18",
+          "contract_25",
+          "contract_30",
+          "contract_41",
+          "contract_43",
+          "contract_44",
+          "contract_45",
+          "contract_52",
+          "contract_71",
+          "contract_75",
+          "contract_87",
+          "contract_88",
+          "contract_90",
+          "contract_101",
+          "contract_106",
+          "contract_125",
+          "contract_141",
+          "contract_150"
+        ],
+        "error_to_error": [
+          "contract_26",
+          "contract_29",
+          "contract_32",
+          "contract_69",
+          "contract_72",
+          "contract_94",
+          "contract_96",
+          "contract_100",
+          "contract_121",
+          "contract_126",
+          "contract_146"
+        ]
+      }
+    }
+  }
+}

@@ -24,7 +24,7 @@ The evidence offsets are zero-based Unicode character offsets, with an exclusive
 
 ## Read the research
 
-- [Short paper PDF](paper/mae_drafting_paper.pdf) and [editable HTML version](paper/mae_drafting_paper.html).
+- [Research manuscript PDF](paper/mae_drafting_paper.pdf) and [editable HTML version](paper/mae_drafting_paper.html), with equations, task-level tables, paired revision analysis, source examples and references.
 - [Dataset card and attribution](data/DATASET_CARD.md), [audit](data/audit.json), and [source manifest](data/source_manifest.json).
 - [Methods and iteration record](research/PROTOCOL.md), [error analysis](research/ERROR_ANALYSIS.md), and [fellowship alignment](research/FELLOWSHIP_ALIGNMENT.md).
 - [Machine-readable results](results/metrics.json), [per-task results](results/test_metrics.csv), [all predictions](results/predictions.jsonl), and [test rule errors](results/rule_errors.json).
